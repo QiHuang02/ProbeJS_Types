@@ -1,0 +1,3834 @@
+declare module "moe.wolfgirl.powerfuljs.custom.fluid_item.FixedItemFluidTank$ItemTransformRule" {
+import {$ItemStack, $ItemStack$$Type} from "net.minecraft.world.item.ItemStack"
+import {$FixedItemFluidTank$ItemTransformRule$FullRule, $FixedItemFluidTank$ItemTransformRule$FullRule$$Type} from "moe.wolfgirl.powerfuljs.custom.fluid_item.FixedItemFluidTank$ItemTransformRule$FullRule"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $FixedItemFluidTank$ItemTransformRule extends $Record {
+
+constructor(empty: $ItemStack$$Type, full: ($FixedItemFluidTank$ItemTransformRule$FullRule$$Type)[])
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "empty"(): $ItemStack
+public "full"(): ($FixedItemFluidTank$ItemTransformRule$FullRule)[]
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FixedItemFluidTank$ItemTransformRule$$Type = ({"full"?: ($FixedItemFluidTank$ItemTransformRule$FullRule$$Type)[], "empty"?: $ItemStack$$Type}) | ([full?: ($FixedItemFluidTank$ItemTransformRule$FullRule$$Type)[], empty?: $ItemStack$$Type]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FixedItemFluidTank$ItemTransformRule_ = $FixedItemFluidTank$ItemTransformRule$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSLambdaType" {
+import {$ParamDecl, $ParamDecl$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.member.ParamDecl"
+import {$MethodDecl, $MethodDecl$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.member.MethodDecl"
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$List, $List$$Type} from "java.util.List"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $JSLambdaType extends $BaseType {
+readonly "params": $List<($ParamDecl)>
+readonly "returnType": $BaseType
+
+constructor(params: $List$$Type<($ParamDecl$$Type)>, returnType: $BaseType$$Type)
+
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+public "asMethod"(methodName: string): $MethodDecl
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSLambdaType$$Type = ($JSLambdaType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSLambdaType_ = $JSLambdaType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.base.ClassProvider" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$Class, $Class$$Type} from "java.lang.Class"
+
+export interface $ClassProvider {
+
+ "getClasses"(): $Collection<($Class<(any)>)>
+
+(): $Collection$$Type<($Class$$Type<(any)>)>
+get "classes"(): $Collection<($Class<(any)>)>
+}
+
+export namespace $ClassProvider {
+const probejs$$marker: never
+}
+export class $ClassProvider$$Static implements $ClassProvider {
+
+
+ "getClasses"(): $Collection<($Class<(any)>)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ClassProvider$$Type = (() => $Collection$$Type<($Class$$Type<(any)>)>);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ClassProvider_ = $ClassProvider$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.member.CommentableCode" {
+import {$Code, $Code$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.Code"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+
+export class $CommentableCode extends $Code {
+readonly "comments": $List<(string)>
+
+constructor()
+
+public "format"(declaration: $Declaration$$Type): $List<(string)>
+public "newline"(...comments: (string)[]): void
+public "addComment"(...comments: (string)[]): void
+public "formatRaw"(declaration: $Declaration$$Type): $List<(string)>
+public "linebreak"(): void
+public "formatComments"(): $List<(string)>
+public "addCommentAtStart"(...comments: (string)[]): void
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $CommentableCode$$Type = ($CommentableCode);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $CommentableCode_ = $CommentableCode$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.mods.mekanism.heat.storage.FixedHeatStorage$Configuration" {
+import {$RecordTypeInfo, $RecordTypeInfo$$Type} from "dev.latvian.mods.rhino.type.RecordTypeInfo"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $FixedHeatStorage$Configuration extends $Record {
+static readonly "TYPE_INFO": $RecordTypeInfo
+
+constructor(insulation: double, conduction: double, capacity: double, initialTemperature: double)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "capacity"(): double
+public "initialTemperature"(): double
+public "insulation"(): double
+public "conduction"(): double
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FixedHeatStorage$Configuration$$Type = ({"initialTemperature"?: double, "insulation"?: double, "capacity"?: double, "conduction"?: double}) | ([initialTemperature?: double, insulation?: double, capacity?: double, conduction?: double]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FixedHeatStorage$Configuration_ = $FixedHeatStorage$Configuration$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.base.info.BlockContext" {
+import {$Level, $Level$$Type} from "net.minecraft.world.level.Level"
+import {$BlockPos, $BlockPos$$Type} from "net.minecraft.core.BlockPos"
+import {$BlockEntity, $BlockEntity$$Type} from "net.minecraft.world.level.block.entity.BlockEntity"
+import {$Record, $Record$$Type} from "java.lang.Record"
+import {$BlockState, $BlockState$$Type} from "net.minecraft.world.level.block.state.BlockState"
+
+export class $BlockContext extends $Record {
+
+constructor(level: $Level$$Type, pos: $BlockPos$$Type, state: $BlockState$$Type, blockEntity: $BlockEntity$$Type)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "state"(): $BlockState
+public "pos"(): $BlockPos
+public "level"(): $Level
+public "blockEntity"(): $BlockEntity
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $BlockContext$$Type = ({"pos"?: $BlockPos$$Type, "blockEntity"?: $BlockEntity$$Type, "state"?: $BlockState$$Type, "level"?: $Level$$Type}) | ([pos?: $BlockPos$$Type, blockEntity?: $BlockEntity$$Type, state?: $BlockState$$Type, level?: $Level$$Type]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $BlockContext_ = $BlockContext$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.base.CapabilityValidator$BlockValidator" {
+import {$BlockContext, $BlockContext$$Type} from "moe.wolfgirl.powerfuljs.custom.base.info.BlockContext"
+import {$CapabilityValidator, $CapabilityValidator$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityValidator"
+
+export interface $CapabilityValidator$BlockValidator extends $CapabilityValidator<($BlockContext)> {
+
+ "test"(info: $BlockContext$$Type, context: any): boolean
+
+(info: $BlockContext, context: any): boolean
+}
+
+export namespace $CapabilityValidator$BlockValidator {
+const probejs$$marker: never
+}
+export class $CapabilityValidator$BlockValidator$$Static implements $CapabilityValidator$BlockValidator {
+
+
+ "test"(info: $BlockContext$$Type, context: any): boolean
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $CapabilityValidator$BlockValidator$$Type = ((info: $BlockContext, context: any) => boolean);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $CapabilityValidator$BlockValidator_ = $CapabilityValidator$BlockValidator$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.registries.info.BlockEntityInfo" {
+import {$CapabilityBuilder$CapabilityFactory, $CapabilityBuilder$CapabilityFactory$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityBuilder$CapabilityFactory"
+import {$BlockEntity, $BlockEntity$$Type} from "net.minecraft.world.level.block.entity.BlockEntity"
+import {$BaseCapability, $BaseCapability$$Type} from "net.neoforged.neoforge.capabilities.BaseCapability"
+import {$BlockInfo, $BlockInfo$$Type} from "moe.wolfgirl.powerfuljs.custom.registries.info.BlockInfo"
+
+export class $BlockEntityInfo extends $BlockInfo {
+readonly "capability": $BaseCapability<(any), (any)>
+
+constructor(capability: $BaseCapability$$Type<(any), (any)>, factory: $CapabilityBuilder$CapabilityFactory$$Type<($BlockEntity$$Type), (any)>)
+
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $BlockEntityInfo$$Type = ($BlockEntityInfo);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $BlockEntityInfo_ = $BlockEntityInfo$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.mods.mekanism.chemical.ConstantChemical$Configuration" {
+import {$ChemicalStack, $ChemicalStack$$Type} from "mekanism.api.chemical.ChemicalStack"
+import {$RecordTypeInfo, $RecordTypeInfo$$Type} from "dev.latvian.mods.rhino.type.RecordTypeInfo"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $ConstantChemical$Configuration extends $Record {
+static readonly "TYPE_INFO": $RecordTypeInfo
+
+constructor(stack: $ChemicalStack$$Type)
+
+public "stack"(): $ChemicalStack
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ConstantChemical$Configuration$$Type = ({"stack"?: $ChemicalStack$$Type}) | ([stack?: $ChemicalStack$$Type]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ConstantChemical$Configuration_ = $ConstantChemical$Configuration$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSArrayType$Builder" {
+import {$JSArrayType, $JSArrayType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSArrayType"
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$JSMemberType$Builder, $JSMemberType$Builder$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSMemberType$Builder"
+import {$JSParam, $JSParam$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSParam"
+
+export class $JSArrayType$Builder extends $JSMemberType$Builder<($JSArrayType$Builder), ($JSArrayType)> {
+readonly "members": $Collection<($JSParam)>
+
+constructor()
+
+public "build"(): $JSArrayType
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSArrayType$Builder$$Type = ($JSArrayType$Builder);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSArrayType$Builder_ = $JSArrayType$Builder$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.CreativeModeTab" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$CreativeModeTab as $CreativeModeTab$0, $CreativeModeTab$$Type as $CreativeModeTab$0$$Type} from "net.minecraft.world.item.CreativeModeTab"
+import {$CreativeTabBuilder, $CreativeTabBuilder$$Type} from "dev.latvian.mods.kubejs.item.creativetab.CreativeTabBuilder"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $CreativeModeTab extends $RegistryKubeEvent<($CreativeModeTab$0)> {
+
+
+public "create"(name: string): $CreativeTabBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $CreativeModeTab$$Type = ($CreativeModeTab);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $CreativeModeTab_ = $CreativeModeTab$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.type.TypeDescriptor" {
+import {$AnnotationHolder, $AnnotationHolder$$Type} from "moe.wolfgirl.probejs.lang.java.base.AnnotationHolder"
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$Annotation, $Annotation$$Type} from "java.lang.annotation.Annotation"
+import {$ClassProvider, $ClassProvider$$Type} from "moe.wolfgirl.probejs.lang.java.base.ClassProvider"
+import {$Class, $Class$$Type} from "java.lang.Class"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$Stream, $Stream$$Type} from "java.util.stream.Stream"
+
+export class $TypeDescriptor extends $AnnotationHolder implements $ClassProvider {
+
+constructor(annotations: ($Annotation$$Type)[])
+
+public "stream"(): $Stream<($TypeDescriptor)>
+public "getClasses"(): $Collection<($Class<(any)>)>
+public "getClassPaths"(): $Collection<($ClassPath)>
+get "classes"(): $Collection<($Class<(any)>)>
+get "classPaths"(): $Collection<($ClassPath)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $TypeDescriptor$$Type = ($TypeDescriptor);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $TypeDescriptor_ = $TypeDescriptor$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.clazz.members.MethodInfo$MethodAttributes" {
+import {$Method, $Method$$Type} from "java.lang.reflect.Method"
+
+export class $MethodInfo$MethodAttributes {
+readonly "isStatic": boolean
+readonly "isDefault": boolean
+readonly "isAbstract": boolean
+
+constructor(method: $Method$$Type)
+
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $MethodInfo$MethodAttributes$$Type = ($MethodInfo$MethodAttributes);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $MethodInfo$MethodAttributes_ = $MethodInfo$MethodAttributes$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.ArmorMaterial" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$ArmorMaterial as $ArmorMaterial$0, $ArmorMaterial$$Type as $ArmorMaterial$0$$Type} from "net.minecraft.world.item.ArmorMaterial"
+import {$ArmorMaterialBuilder, $ArmorMaterialBuilder$$Type} from "dev.latvian.mods.kubejs.item.ArmorMaterialBuilder"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $ArmorMaterial extends $RegistryKubeEvent<($ArmorMaterial$0)> {
+
+
+public "create"(name: string): $ArmorMaterialBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ArmorMaterial$$Type = ($ArmorMaterial);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ArmorMaterial_ = $ArmorMaterial$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.registries.info.CapabilityInfo$Info" {
+import {$CapabilityBuilder$CapabilityFactory, $CapabilityBuilder$CapabilityFactory$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityBuilder$CapabilityFactory"
+import {$ICapabilityProvider, $ICapabilityProvider$$Type} from "net.neoforged.neoforge.capabilities.ICapabilityProvider"
+import {$CapabilityInfo, $CapabilityInfo$$Type} from "moe.wolfgirl.powerfuljs.custom.registries.info.CapabilityInfo"
+import {$BaseCapability, $BaseCapability$$Type} from "net.neoforged.neoforge.capabilities.BaseCapability"
+
+export class $CapabilityInfo$Info<I> extends $CapabilityInfo<(I)> {
+readonly "capability": $BaseCapability<(any), (any)>
+
+constructor(capability: $BaseCapability$$Type<(any), (any)>, factory: $CapabilityBuilder$CapabilityFactory$$Type<(I), (any)>)
+
+public "build"(): $ICapabilityProvider<(I), (any), (any)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $CapabilityInfo$Info$$Type<I> = ($CapabilityInfo$Info<(I)>);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $CapabilityInfo$Info_<I> = $CapabilityInfo$Info$$Type<(I)>;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.base.TypeVariableHolder" {
+import {$AnnotationHolder, $AnnotationHolder$$Type} from "moe.wolfgirl.probejs.lang.java.base.AnnotationHolder"
+import {$TypeVariable, $TypeVariable$$Type} from "java.lang.reflect.TypeVariable"
+import {$VariableType, $VariableType$$Type} from "moe.wolfgirl.probejs.lang.java.type.impl.VariableType"
+import {$Annotation, $Annotation$$Type} from "java.lang.annotation.Annotation"
+import {$List, $List$$Type} from "java.util.List"
+
+export class $TypeVariableHolder extends $AnnotationHolder {
+readonly "variableTypes": $List<($VariableType)>
+
+constructor(variables: ($TypeVariable$$Type<(any)>)[], annotations: ($Annotation$$Type)[])
+
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $TypeVariableHolder$$Type = ($TypeVariableHolder);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $TypeVariableHolder_ = $TypeVariableHolder$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.item.ConstantItem$Configuration" {
+import {$ItemStack, $ItemStack$$Type} from "net.minecraft.world.item.ItemStack"
+import {$List, $List$$Type} from "java.util.List"
+import {$RecordTypeInfo, $RecordTypeInfo$$Type} from "dev.latvian.mods.rhino.type.RecordTypeInfo"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $ConstantItem$Configuration extends $Record {
+static readonly "TYPE_INFO": $RecordTypeInfo
+
+constructor(items: $List$$Type<($ItemStack$$Type)>)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "items"(): $List<($ItemStack)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ConstantItem$Configuration$$Type = ({"items"?: $List$$Type<($ItemStack$$Type)>}) | ([items?: $List$$Type<($ItemStack$$Type)>]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ConstantItem$Configuration_ = $ConstantItem$Configuration$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSObjectType" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$JSMemberType, $JSMemberType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSMemberType"
+import {$JSParam, $JSParam$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSParam"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $JSObjectType extends $JSMemberType {
+readonly "members": $Collection<($JSParam)>
+
+constructor(members: $Collection$$Type<($JSParam$$Type)>)
+
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSObjectType$$Type = ($JSObjectType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSObjectType_ = $JSObjectType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.CustomStat" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$ResourceLocation, $ResourceLocation$$Type} from "net.minecraft.resources.ResourceLocation"
+import {$CustomStatBuilder, $CustomStatBuilder$$Type} from "dev.latvian.mods.kubejs.misc.CustomStatBuilder"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $CustomStat extends $RegistryKubeEvent<($ResourceLocation)> {
+
+
+public "create"(name: string): $CustomStatBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $CustomStat$$Type = ($CustomStat);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $CustomStat_ = $CustomStat$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSMemberType$Builder" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$JSParam, $JSParam$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSParam"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+
+export class $JSMemberType$Builder<T extends $JSMemberType$Builder<(T), (O)>, O extends $BaseType> {
+readonly "members": $Collection<($JSParam)>
+
+constructor()
+
+public "member"(name: string, optional: boolean, type: $BaseType$$Type): T
+public "member"(name: string, type: $BaseType$$Type): T
+public "build"(): O
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSMemberType$Builder$$Type<T, O> = ($JSMemberType$Builder<(T), (O)>);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSMemberType$Builder_<T, O> = $JSMemberType$Builder$$Type<(T), (O)>;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.logic.Rule" {
+import {$Effect, $Effect$$Type} from "moe.wolfgirl.powerfuljs.custom.logic.Effect"
+import {$ServerLevel, $ServerLevel$$Type} from "net.minecraft.server.level.ServerLevel"
+import {$BlockPos, $BlockPos$$Type} from "net.minecraft.core.BlockPos"
+import {$BlockEntity, $BlockEntity$$Type} from "net.minecraft.world.level.block.entity.BlockEntity"
+import {$BlockState, $BlockState$$Type} from "net.minecraft.world.level.block.state.BlockState"
+
+export class $Rule {
+
+constructor()
+
+public "run"(level: $ServerLevel$$Type, pos: $BlockPos$$Type, state: $BlockState$$Type, blockEntity: $BlockEntity$$Type): boolean
+public "or"(...rules: ($Rule$$Type)[]): $Rule
+public "negate"(): $Rule
+public "and"(...rules: ($Rule$$Type)[]): $Rule
+public "evaluate"(level: $ServerLevel$$Type, pos: $BlockPos$$Type, state: $BlockState$$Type, blockEntity: $BlockEntity$$Type): boolean
+public "effects"(...effects: ($Effect$$Type)[]): $Rule
+public "effect"(effect: $Effect$$Type): $Rule
+public "then"(rule: $Rule$$Type): $Rule
+public "thenRun"(...effects: ($Effect$$Type)[]): $Rule
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Rule$$Type = ($Rule);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Rule_ = $Rule$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.clazz.ClassPath" {
+import {$List, $List$$Type} from "java.util.List"
+import {$Class, $Class$$Type} from "java.lang.Class"
+import {$Path, $Path$$Type} from "java.nio.file.Path"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $ClassPath extends $Record {
+
+constructor(className: string)
+constructor(parts: $List$$Type<(string)>)
+constructor(clazz: $Class$$Type<(any)>)
+
+public "getName"(): string
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "getPackage"(): $List<(string)>
+public "parts"(): $List<(string)>
+public "getClassPath"(): string
+public "getDirPath"(base: $Path$$Type): $Path
+public "makePath"(base: $Path$$Type): $Path
+public "getClassPathJava"(): string
+public "getTypeScriptPath"(): string
+public "getConcatenated"(sep: string): string
+public "getGenerics"(): $List<(string)>
+public "getConcatenatedPackage"(sep: string): string
+get "name"(): string
+get "package"(): $List<(string)>
+get "classPath"(): string
+get "classPathJava"(): string
+get "typeScriptPath"(): string
+get "generics"(): $List<(string)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ClassPath$$Type = ({"parts"?: $List$$Type<(string)>}) | ([parts?: $List$$Type<(string)>]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ClassPath_ = $ClassPath$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.base.CapabilityValidator" {
+export {} // Mark the file as a module, do not remove unless there are other import/exports!
+export interface $CapabilityValidator<T> {
+
+ "test"(info: T, context: any): boolean
+
+(info: T, context: any): boolean
+}
+
+export namespace $CapabilityValidator {
+const probejs$$marker: never
+}
+export class $CapabilityValidator$$Static<T> implements $CapabilityValidator {
+
+
+ "test"(info: T, context: any): boolean
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $CapabilityValidator$$Type<T> = ((info: T, context: any) => boolean);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $CapabilityValidator_<T> = $CapabilityValidator$$Type<(T)>;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.clazz.Clazz" {
+import {$ConstructorInfo, $ConstructorInfo$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.members.ConstructorInfo"
+import {$TypeVariableHolder, $TypeVariableHolder$$Type} from "moe.wolfgirl.probejs.lang.java.base.TypeVariableHolder"
+import {$FieldInfo, $FieldInfo$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.members.FieldInfo"
+import {$Clazz$ClassAttribute, $Clazz$ClassAttribute$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.Clazz$ClassAttribute"
+import {$VariableType, $VariableType$$Type} from "moe.wolfgirl.probejs.lang.java.type.impl.VariableType"
+import {$List, $List$$Type} from "java.util.List"
+import {$Class, $Class$$Type} from "java.lang.Class"
+import {$TypeDescriptor, $TypeDescriptor$$Type} from "moe.wolfgirl.probejs.lang.java.type.TypeDescriptor"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$MethodInfo, $MethodInfo$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.members.MethodInfo"
+
+export class $Clazz extends $TypeVariableHolder {
+readonly "classPath": $ClassPath
+readonly "constructors": $List<($ConstructorInfo)>
+readonly "fields": $List<($FieldInfo)>
+readonly "methods": $List<($MethodInfo)>
+readonly "superClass": $TypeDescriptor
+readonly "interfaces": $List<($TypeDescriptor)>
+readonly "attribute": $Clazz$ClassAttribute
+ "recursionDepth": integer
+readonly "variableTypes": $List<($VariableType)>
+
+constructor(clazz: $Class$$Type<(any)>)
+
+public "equals"(o: any): boolean
+public "hashCode"(): integer
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Clazz$$Type = ($Clazz);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Clazz_ = $Clazz$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.Potion" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$Potion as $Potion$0, $Potion$$Type as $Potion$0$$Type} from "net.minecraft.world.item.alchemy.Potion"
+import {$PotionBuilder, $PotionBuilder$$Type} from "dev.latvian.mods.kubejs.misc.PotionBuilder"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $Potion extends $RegistryKubeEvent<($Potion$0)> {
+
+
+public "create"(name: string): $PotionBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Potion$$Type = ($Potion);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Potion_ = $Potion$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.TypeScriptFile" {
+import {$Code, $Code$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.Code"
+import {$BufferedWriter, $BufferedWriter$$Type} from "java.io.BufferedWriter"
+import {$Optional, $Optional$$Type} from "java.util.Optional"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$Class, $Class$$Type} from "java.lang.Class"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$Path, $Path$$Type} from "java.nio.file.Path"
+
+export class $TypeScriptFile {
+readonly "declaration": $Declaration
+readonly "codeList": $List<($Code)>
+readonly "classPath": $ClassPath
+
+constructor(self: $ClassPath$$Type)
+
+public "format"(): string
+public "write"(writer: $BufferedWriter$$Type): void
+public "write"(writeTo: $Path$$Type): void
+public "refreshImports"(): void
+public "findCode"<T extends $Code>(type: $Class$$Type<(T)>): $Optional<(T)>
+public "addCode"(code: $Code$$Type): void
+public "writeAsModule"(writer: $BufferedWriter$$Type): void
+public "excludeSymbol"(name: string): void
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $TypeScriptFile$$Type = ($TypeScriptFile);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $TypeScriptFile_ = $TypeScriptFile$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.fluid.storage.FixedFluidTank$Configuration" {
+import {$RecordTypeInfo, $RecordTypeInfo$$Type} from "dev.latvian.mods.rhino.type.RecordTypeInfo"
+import {$FluidIngredient, $FluidIngredient$$Type} from "net.neoforged.neoforge.fluids.crafting.FluidIngredient"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $FixedFluidTank$Configuration extends $Record {
+static readonly "TYPE_INFO": $RecordTypeInfo
+
+constructor(capacity: integer, maxExtract: integer, maxReceive: integer, validator: $FluidIngredient$$Type)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "capacity"(): integer
+public "maxReceive"(): integer
+public "maxExtract"(): integer
+public "validator"(): $FluidIngredient
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FixedFluidTank$Configuration$$Type = ({"maxExtract"?: integer, "maxReceive"?: integer, "validator"?: $FluidIngredient$$Type, "capacity"?: integer}) | ([maxExtract?: integer, maxReceive?: integer, validator?: $FluidIngredient$$Type, capacity?: integer]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FixedFluidTank$Configuration_ = $FixedFluidTank$Configuration$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.SoundEvent" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$SoundEventBuilder, $SoundEventBuilder$$Type} from "dev.latvian.mods.kubejs.misc.SoundEventBuilder"
+import {$SoundEvent as $SoundEvent$0, $SoundEvent$$Type as $SoundEvent$0$$Type} from "net.minecraft.sounds.SoundEvent"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $SoundEvent extends $RegistryKubeEvent<($SoundEvent$0)> {
+
+
+public "create"(name: string): $SoundEventBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $SoundEvent$$Type = ($SoundEvent);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $SoundEvent_ = $SoundEvent$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.registries.info.BlockInfo" {
+import {$CapabilityValidator$BlockValidator, $CapabilityValidator$BlockValidator$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityValidator$BlockValidator"
+import {$CapabilityBuilder$CapabilityFactory, $CapabilityBuilder$CapabilityFactory$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityBuilder$CapabilityFactory"
+import {$CapabilityInfo, $CapabilityInfo$$Type} from "moe.wolfgirl.powerfuljs.custom.registries.info.CapabilityInfo"
+import {$BlockContext, $BlockContext$$Type} from "moe.wolfgirl.powerfuljs.custom.base.info.BlockContext"
+import {$BaseCapability, $BaseCapability$$Type} from "net.neoforged.neoforge.capabilities.BaseCapability"
+import {$IBlockCapabilityProvider, $IBlockCapabilityProvider$$Type} from "net.neoforged.neoforge.capabilities.IBlockCapabilityProvider"
+import {$BlockStatePredicate, $BlockStatePredicate$$Type} from "dev.latvian.mods.kubejs.block.state.BlockStatePredicate"
+
+export class $BlockInfo extends $CapabilityInfo<($BlockContext)> {
+readonly "capability": $BaseCapability<(any), (any)>
+
+constructor(capability: $BaseCapability$$Type<(any), (any)>, factory: $CapabilityBuilder$CapabilityFactory$$Type<($BlockContext$$Type), (any)>)
+
+public "validate"(validator: $CapabilityValidator$BlockValidator$$Type): $BlockInfo
+public "build"(): $IBlockCapabilityProvider<(any), (any)>
+public "matchState"(predicate: $BlockStatePredicate$$Type): $BlockInfo
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $BlockInfo$$Type = ($BlockInfo);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $BlockInfo_ = $BlockInfo$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.Fluid" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$ThickFluidBuilder, $ThickFluidBuilder$$Type} from "dev.latvian.mods.kubejs.fluid.ThickFluidBuilder"
+import {$ThinFluidBuilder, $ThinFluidBuilder$$Type} from "dev.latvian.mods.kubejs.fluid.ThinFluidBuilder"
+import {$Fluid as $Fluid$0, $Fluid$$Type as $Fluid$0$$Type} from "net.minecraft.world.level.material.Fluid"
+import {$FluidBuilder, $FluidBuilder$$Type} from "dev.latvian.mods.kubejs.fluid.FluidBuilder"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $Fluid extends $RegistryKubeEvent<($Fluid$0)> {
+
+
+public "create"(name: string): $FluidBuilder
+public "create"(name: string, type: "thin"): $ThinFluidBuilder
+public "create"(name: string, type: "thick"): $ThickFluidBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Fluid$$Type = ($Fluid);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Fluid_ = $Fluid$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSParam" {
+import {$Function, $Function$$Type} from "java.util.function.Function"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $JSParam extends $Record {
+
+constructor(name: string, optional: boolean, type: $BaseType$$Type)
+
+public "name"(): string
+public "type"(): $BaseType
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "format"(declaration: $Declaration$$Type, formatType: $BaseType$FormatType$$Type, nameGetter: $Function$$Type<(string), (string)>): string
+public "optional"(): boolean
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSParam$$Type = ({"optional"?: boolean, "type"?: $BaseType$$Type, "name"?: string}) | ([optional?: boolean, type?: $BaseType$$Type, name?: string]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSParam_ = $JSParam$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.VillagerProfession" {
+import {$VillagerProfession as $VillagerProfession$0, $VillagerProfession$$Type as $VillagerProfession$0$$Type} from "net.minecraft.world.entity.npc.VillagerProfession"
+import {$VillagerProfessionBuilder, $VillagerProfessionBuilder$$Type} from "dev.latvian.mods.kubejs.misc.VillagerProfessionBuilder"
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $VillagerProfession extends $RegistryKubeEvent<($VillagerProfession$0)> {
+
+
+public "create"(name: string): $VillagerProfessionBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $VillagerProfession$$Type = ($VillagerProfession);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $VillagerProfession_ = $VillagerProfession$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSJoinedType" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $JSJoinedType extends $BaseType {
+readonly "delimiter": string
+readonly "types": $List<($BaseType)>
+
+
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSJoinedType$$Type = ($JSJoinedType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSJoinedType_ = $JSJoinedType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.TSClassType" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $TSClassType extends $BaseType {
+ "classPath": $ClassPath
+
+constructor(classPath: $ClassPath$$Type)
+
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $TSClassType$$Type = ($TSClassType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $TSClassType_ = $TSClassType$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.base.CapabilityValidator$ItemValidator" {
+import {$ItemStack, $ItemStack$$Type} from "net.minecraft.world.item.ItemStack"
+import {$CapabilityValidator, $CapabilityValidator$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityValidator"
+
+export interface $CapabilityValidator$ItemValidator extends $CapabilityValidator<($ItemStack)> {
+
+ "test"(info: $ItemStack$$Type, context: any): boolean
+
+(info: $ItemStack, context: any): boolean
+}
+
+export namespace $CapabilityValidator$ItemValidator {
+const probejs$$marker: never
+}
+export class $CapabilityValidator$ItemValidator$$Static implements $CapabilityValidator$ItemValidator {
+
+
+ "test"(info: $ItemStack$$Type, context: any): boolean
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $CapabilityValidator$ItemValidator$$Type = ((info: $ItemStack, context: any) => boolean);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $CapabilityValidator$ItemValidator_ = $CapabilityValidator$ItemValidator$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.CapabilityWrapper" {
+import {$BlockCapability, $BlockCapability$$Type} from "net.neoforged.neoforge.capabilities.BlockCapability"
+import {$SideConfig, $SideConfig$$Type} from "com.enderio.base.api.capability.SideConfig"
+import {$IRadiationEntity, $IRadiationEntity$$Type} from "mekanism.api.radiation.capability.IRadiationEntity"
+import {$FluidTank, $FluidTank$$Type} from "net.blay09.mods.balm.api.fluid.FluidTank"
+import {$IOwnerObject, $IOwnerObject$$Type} from "mekanism.api.security.IOwnerObject"
+import {$IConfigurable, $IConfigurable$$Type} from "mekanism.api.IConfigurable"
+import {$ICurio, $ICurio$$Type} from "top.theillusivec4.curios.api.type.capability.ICurio"
+import {$Direction, $Direction$$Type} from "net.minecraft.core.Direction"
+import {$ICraftingMachine, $ICraftingMachine$$Type} from "appeng.api.implementations.blockentities.ICraftingMachine"
+import {$EnergyStorage, $EnergyStorage$$Type} from "net.blay09.mods.balm.api.energy.EnergyStorage"
+import {$IInWorldGridNodeHost, $IInWorldGridNodeHost$$Type} from "appeng.api.networking.IInWorldGridNodeHost"
+import {$ICrankable, $ICrankable$$Type} from "appeng.api.implementations.blockentities.ICrankable"
+import {$IAlloyInteraction, $IAlloyInteraction$$Type} from "mekanism.api.IAlloyInteraction"
+import {$ResourceFilter, $ResourceFilter$$Type} from "com.enderio.base.api.filter.ResourceFilter"
+import {$ICuriosItemHandler, $ICuriosItemHandler$$Type} from "top.theillusivec4.curios.api.type.capability.ICuriosItemHandler"
+import {$IFluidHandlerItem, $IFluidHandlerItem$$Type} from "net.neoforged.neoforge.fluids.capability.IFluidHandlerItem"
+import {$GenericInternalInventory, $GenericInternalInventory$$Type} from "appeng.api.behaviors.GenericInternalInventory"
+import {$KitchenItemProvider, $KitchenItemProvider$$Type} from "net.blay09.mods.cookingforblockheads.api.KitchenItemProvider"
+import {$ItemCapability, $ItemCapability$$Type} from "net.neoforged.neoforge.capabilities.ItemCapability"
+import {$IFluidHandler, $IFluidHandler$$Type} from "net.neoforged.neoforge.fluids.capability.IFluidHandler"
+import {$IEvaporationSolar, $IEvaporationSolar$$Type} from "mekanism.api.IEvaporationSolar"
+import {$IChemicalHandler, $IChemicalHandler$$Type} from "mekanism.api.chemical.IChemicalHandler"
+import {$MEStorage, $MEStorage$$Type} from "appeng.api.storage.MEStorage"
+import {$ISecurityObject, $ISecurityObject$$Type} from "mekanism.api.security.ISecurityObject"
+import {$IRadiationShielding, $IRadiationShielding$$Type} from "mekanism.api.radiation.capability.IRadiationShielding"
+import {$IItemHandler, $IItemHandler$$Type} from "net.neoforged.neoforge.items.IItemHandler"
+import {$IConfigCardAccess, $IConfigCardAccess$$Type} from "mekanism.api.IConfigCardAccess"
+import {$ILaserDissipation, $ILaserDissipation$$Type} from "mekanism.api.lasers.ILaserDissipation"
+import {$IHeatHandler, $IHeatHandler$$Type} from "mekanism.api.heat.IHeatHandler"
+import {$EntityCapability, $EntityCapability$$Type} from "net.neoforged.neoforge.capabilities.EntityCapability"
+import {$IStrictEnergyHandler, $IStrictEnergyHandler$$Type} from "mekanism.api.energy.IStrictEnergyHandler"
+import {$ConduitUpgrade, $ConduitUpgrade$$Type} from "com.enderio.conduits.api.upgrade.ConduitUpgrade"
+import {$Container, $Container$$Type} from "net.minecraft.world.Container"
+import {$ILaserReceptor, $ILaserReceptor$$Type} from "mekanism.api.lasers.ILaserReceptor"
+import {$KitchenItemProcessor, $KitchenItemProcessor$$Type} from "net.blay09.mods.cookingforblockheads.api.KitchenItemProcessor"
+import {$IEnergyStorage, $IEnergyStorage$$Type} from "net.neoforged.neoforge.energy.IEnergyStorage"
+
+export interface $CapabilityWrapper {
+
+}
+
+export namespace $CapabilityWrapper {
+function block<T extends BlockCapabilities>(capability: T): BlockCapabilityMap[T]
+function item<T extends ItemCapabilities>(capability: T): ItemCapabilityMap[T]
+function entity<T extends EntityCapabilities>(capability: T): EntityCapabilityMap[T]
+const probejs$$marker: never
+}
+export class $CapabilityWrapper$$Static implements $CapabilityWrapper {
+
+
+static "block"<T extends BlockCapabilities>(capability: T): BlockCapabilityMap[T]
+static "item"<T extends ItemCapabilities>(capability: T): ItemCapabilityMap[T]
+static "entity"<T extends EntityCapabilities>(capability: T): EntityCapabilityMap[T]
+}
+export type BlockCapabilityMap = {"mekanism:security_object": $BlockCapability<($ISecurityObject), (void)>;
+"cookingforblockheads:kitchen_item_provider": $BlockCapability<($KitchenItemProvider), (void)>;
+"ae2:generic_internal_inv": $BlockCapability<($GenericInternalInventory), ($Direction)>;
+"neoforge:item_handler": $BlockCapability<($IItemHandler), ($Direction)>;
+"mekanism:heat_handler": $BlockCapability<($IHeatHandler), ($Direction)>;
+"mekanism:strict_energy_handler": $BlockCapability<($IStrictEnergyHandler), ($Direction)>;
+"mekanism:laser_receptor": $BlockCapability<($ILaserReceptor), ($Direction)>;
+"neoforge:energy": $BlockCapability<($IEnergyStorage), ($Direction)>;
+"ae2:crafting_machine": $BlockCapability<($ICraftingMachine), ($Direction)>;
+"ae2:me_storage": $BlockCapability<($MEStorage), ($Direction)>;
+"balm:container": $BlockCapability<($Container), ($Direction)>;
+"neoforge:fluid_handler": $BlockCapability<($IFluidHandler), ($Direction)>;
+"cookingforblockheads:kitchen_item_processor": $BlockCapability<($KitchenItemProcessor), (void)>;
+"balm:energy_storage": $BlockCapability<($EnergyStorage), ($Direction)>;
+"enderio:side_config": $BlockCapability<($SideConfig), ($Direction)>;
+"mekanism:chemical_handler": $BlockCapability<($IChemicalHandler), ($Direction)>;
+"mekanism:evaporation_solar": $BlockCapability<($IEvaporationSolar), (void)>;
+"ae2:inworld_gridnode_host": $BlockCapability<($IInWorldGridNodeHost), (void)>;
+"ae2:crankable": $BlockCapability<($ICrankable), ($Direction)>;
+"mekanism:configurable": $BlockCapability<($IConfigurable), ($Direction)>;
+"mekanism:config_card": $BlockCapability<($IConfigCardAccess), ($Direction)>;
+"mekanism:alloy_interaction": $BlockCapability<($IAlloyInteraction), ($Direction)>;
+"mekanism:owner_object": $BlockCapability<($IOwnerObject), (void)>;
+"balm:fluid_tank": $BlockCapability<($FluidTank), ($Direction)>};
+export type BlockCapabilities = keyof BlockCapabilityMap;
+export type EntityCapabilityMap = {"neoforge:energy": $EntityCapability<($IEnergyStorage), ($Direction)>;
+"mekanism:radiation": $EntityCapability<($IRadiationEntity), (void)>;
+"mekanism:security_object": $EntityCapability<($ISecurityObject), (void)>;
+"neoforge:fluid_handler": $EntityCapability<($IFluidHandler), ($Direction)>;
+"mekanism:chemical_handler": $EntityCapability<($IChemicalHandler), (void)>;
+"neoforge:item_handler": $EntityCapability<($IItemHandler), (void)>;
+"curios:inventory": $EntityCapability<($ICuriosItemHandler), (void)>;
+"mekanism:strict_energy_handler": $EntityCapability<($IStrictEnergyHandler), (void)>;
+"neoforge:item_handler_automation": $EntityCapability<($IItemHandler), ($Direction)>;
+"curios:item_handler": $EntityCapability<($IItemHandler), (void)>;
+"mekanism:owner_object": $EntityCapability<($IOwnerObject), (void)>};
+export type EntityCapabilities = keyof EntityCapabilityMap;
+export type ItemCapabilityMap = {"neoforge:energy": $ItemCapability<($IEnergyStorage), (void)>;
+"mekanism:radiation_shielding": $ItemCapability<($IRadiationShielding), (void)>;
+"mekanism:security_object": $ItemCapability<($ISecurityObject), (void)>;
+"neoforge:fluid_handler": $ItemCapability<($IFluidHandlerItem), (void)>;
+"mekanism:chemical_handler": $ItemCapability<($IChemicalHandler), (void)>;
+"mekanism:laser_dissipation": $ItemCapability<($ILaserDissipation), (void)>;
+"neoforge:item_handler": $ItemCapability<($IItemHandler), (void)>;
+"mekanism:strict_energy_handler": $ItemCapability<($IStrictEnergyHandler), (void)>;
+"enderio:item_filter": $ItemCapability<($ResourceFilter), (void)>;
+"mekanism:owner_object": $ItemCapability<($IOwnerObject), (void)>;
+"enderio:conduit_upgrade": $ItemCapability<($ConduitUpgrade), (void)>;
+"curios:item": $ItemCapability<($ICurio), (void)>};
+export type ItemCapabilities = keyof ItemCapabilityMap;
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $CapabilityWrapper$$Type = ($CapabilityWrapper);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $CapabilityWrapper_ = $CapabilityWrapper$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.Code" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$Class, $Class$$Type} from "java.lang.Class"
+import {$ImportInfo$Type, $ImportInfo$Type$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo$Type"
+
+export class $Code {
+
+constructor()
+
+public "format"(declaration: $Declaration$$Type): $List<(string)>
+public "line"(declaration: $Declaration$$Type): string
+public "getClasses"(): $Collection<($Class<(any)>)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+public "getUsedImportsAs"(type: $ImportInfo$Type$$Type): $Collection<($ImportInfo)>
+get "classes"(): $Collection<($Class<(any)>)>
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Code$$Type = ($Code);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Code_ = $Code$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.ts.Wrapped$Global" {
+import {$Code, $Code$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.Code"
+import {$Wrapped, $Wrapped$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ts.Wrapped"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+
+export class $Wrapped$Global extends $Wrapped {
+readonly "codes": $List<($Code)>
+readonly "comments": $List<(string)>
+
+constructor()
+
+public "formatRaw"(declaration: $Declaration$$Type): $List<(string)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Wrapped$Global$$Type = ($Wrapped$Global);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Wrapped$Global_ = $Wrapped$Global$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.mixin.mekanism.FactoryRecipeAccessor" {
+import {$FactoryRecipeCacheLookupMonitor, $FactoryRecipeCacheLookupMonitor$$Type} from "mekanism.common.recipe.lookup.monitor.FactoryRecipeCacheLookupMonitor"
+import {$MekanismRecipe, $MekanismRecipe$$Type} from "mekanism.api.recipes.MekanismRecipe"
+
+export interface $FactoryRecipeAccessor<RECIPE extends $MekanismRecipe<(any)>> {
+
+ "getRecipeCacheLookupMonitors"(): ($FactoryRecipeCacheLookupMonitor<(RECIPE)>)[]
+
+(): ($FactoryRecipeCacheLookupMonitor$$Type<(RECIPE)>)[]
+get "recipeCacheLookupMonitors"(): ($FactoryRecipeCacheLookupMonitor<(RECIPE)>)[]
+}
+
+export namespace $FactoryRecipeAccessor {
+const probejs$$marker: never
+}
+export class $FactoryRecipeAccessor$$Static<RECIPE extends $MekanismRecipe<(any)>> implements $FactoryRecipeAccessor {
+
+
+ "getRecipeCacheLookupMonitors"(): ($FactoryRecipeCacheLookupMonitor<(RECIPE)>)[]
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FactoryRecipeAccessor$$Type<RECIPE> = (() => ($FactoryRecipeCacheLookupMonitor$$Type<(RECIPE)>)[]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FactoryRecipeAccessor_<RECIPE> = $FactoryRecipeAccessor$$Type<(RECIPE)>;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.clazz.members.FieldInfo$FieldAttributes" {
+import {$Field, $Field$$Type} from "java.lang.reflect.Field"
+
+export class $FieldInfo$FieldAttributes {
+readonly "isFinal": boolean
+readonly "isStatic": boolean
+
+constructor(field: $Field$$Type)
+
+public "getStaticValue"(): any
+get "staticValue"(): any
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FieldInfo$FieldAttributes$$Type = ($FieldInfo$FieldAttributes);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FieldInfo$FieldAttributes_ = $FieldInfo$FieldAttributes$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.MobEffect" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$MobEffectBuilder, $MobEffectBuilder$$Type} from "dev.latvian.mods.kubejs.misc.MobEffectBuilder"
+import {$MobEffect as $MobEffect$0, $MobEffect$$Type as $MobEffect$0$$Type} from "net.minecraft.world.effect.MobEffect"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $MobEffect extends $RegistryKubeEvent<($MobEffect$0)> {
+
+
+public "create"(name: string): $MobEffectBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $MobEffect$$Type = ($MobEffect);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $MobEffect_ = $MobEffect$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.ts.MethodDeclaration" {
+import {$CommentableCode, $CommentableCode$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.member.CommentableCode"
+import {$ParamDecl, $ParamDecl$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.member.ParamDecl"
+import {$TSVariableType, $TSVariableType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.TSVariableType"
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$List, $List$$Type} from "java.util.List"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+
+export class $MethodDeclaration extends $CommentableCode {
+ "name": string
+readonly "variableTypes": $List<($TSVariableType)>
+readonly "params": $List<($ParamDecl)>
+ "returnType": $BaseType
+readonly "comments": $List<(string)>
+
+constructor(name: string, variableTypes: $List$$Type<($TSVariableType$$Type)>, params: $List$$Type<($ParamDecl$$Type)>, returnType: $BaseType$$Type)
+
+public "formatRaw"(declaration: $Declaration$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $MethodDeclaration$$Type = ($MethodDeclaration);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $MethodDeclaration_ = $MethodDeclaration$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.Declaration" {
+import {$Map, $Map$$Type} from "java.util.Map"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$Reference, $Reference$$Type} from "moe.wolfgirl.probejs.lang.typescript.Reference"
+
+export class $Declaration {
+readonly "references": $Map<($ClassPath), ($Reference)>
+
+constructor()
+
+public "addClass"(path: $ImportInfo$$Type): void
+public "getSymbol"(path: $ClassPath$$Type): string
+public "exclude"(name: string): void
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Declaration$$Type = ($Declaration);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Declaration_ = $Declaration$$Type;
+}}
+declare module "moe.wolfgirl.probejs.events.SnippetGenerationEventJS" {
+import {$KubeEvent, $KubeEvent$$Type} from "dev.latvian.mods.kubejs.event.KubeEvent"
+import {$Snippet, $Snippet$$Type} from "moe.wolfgirl.probejs.lang.snippet.Snippet"
+import {$SnippetDump, $SnippetDump$$Type} from "moe.wolfgirl.probejs.lang.snippet.SnippetDump"
+import {$Consumer, $Consumer$$Type} from "java.util.function.Consumer"
+
+export class $SnippetGenerationEventJS implements $KubeEvent {
+
+constructor(dump: $SnippetDump$$Type)
+
+public "create"(name: string, handler: $Consumer$$Type<($Snippet)>): void
+/**
+ * Stops the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `exit` denotes a `default` outcome.
+ */
+public "exit"(arg1: any): any
+/**
+ * Stops the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `exit` denotes a `default` outcome.
+ */
+public "exit"(): any
+/**
+ * Cancels the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `cancel` denotes a `false` outcome.
+ */
+public "cancel"(arg1: any): any
+/**
+ * Cancels the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `cancel` denotes a `false` outcome.
+ */
+public "cancel"(): any
+/**
+ * Stops the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `success` denotes a `true` outcome.
+ */
+public "success"(arg1: any): any
+/**
+ * Stops the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `success` denotes a `true` outcome.
+ */
+public "success"(): any
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $SnippetGenerationEventJS$$Type = ($SnippetGenerationEventJS);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $SnippetGenerationEventJS_ = $SnippetGenerationEventJS$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType" {
+import {$Enum, $Enum$$Type} from "java.lang.Enum"
+
+export class $BaseType$FormatType extends $Enum<($BaseType$FormatType)> {
+static readonly "INPUT": $BaseType$FormatType
+static readonly "RETURN": $BaseType$FormatType
+static readonly "VARIABLE": $BaseType$FormatType
+
+
+public static "values"(): ($BaseType$FormatType)[]
+public static "valueOf"(name: string): $BaseType$FormatType
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $BaseType$FormatType$$Type = (("input") | ("return") | ("variable"));
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $BaseType$FormatType_ = $BaseType$FormatType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.clazz.Clazz$ClassType" {
+import {$Enum, $Enum$$Type} from "java.lang.Enum"
+
+export class $Clazz$ClassType extends $Enum<($Clazz$ClassType)> {
+static readonly "INTERFACE": $Clazz$ClassType
+static readonly "ENUM": $Clazz$ClassType
+static readonly "RECORD": $Clazz$ClassType
+static readonly "CLASS": $Clazz$ClassType
+
+
+public static "values"(): ($Clazz$ClassType)[]
+public static "valueOf"(name: string): $Clazz$ClassType
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Clazz$ClassType$$Type = (("interface") | ("enum") | ("record") | ("class"));
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Clazz$ClassType_ = $Clazz$ClassType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.TSOptionalType" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $TSOptionalType extends $BaseType {
+ "component": $BaseType
+
+constructor(component: $BaseType$$Type)
+
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $TSOptionalType$$Type = ($TSOptionalType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $TSOptionalType_ = $TSOptionalType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.transpiler.Transpiler" {
+import {$TypeConverter, $TypeConverter$$Type} from "moe.wolfgirl.probejs.lang.transpiler.TypeConverter"
+import {$Clazz, $Clazz$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.Clazz"
+import {$Map, $Map$$Type} from "java.util.Map"
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$Set, $Set$$Type} from "java.util.Set"
+import {$Class, $Class$$Type} from "java.lang.Class"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$TypeScriptFile, $TypeScriptFile$$Type} from "moe.wolfgirl.probejs.lang.typescript.TypeScriptFile"
+import {$ScriptManager, $ScriptManager$$Type} from "dev.latvian.mods.kubejs.script.ScriptManager"
+
+export class $Transpiler {
+readonly "typeConverter": $TypeConverter
+readonly "rejectedClasses": $Set<($ClassPath)>
+
+constructor(manager: $ScriptManager$$Type)
+
+public "init"(): void
+public "dump"(clazzes: $Collection$$Type<($Clazz$$Type)>): $Map<($ClassPath), ($TypeScriptFile)>
+public "reject"(clazz: $Class$$Type<(any)>): void
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Transpiler$$Type = ($Transpiler);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Transpiler_ = $Transpiler$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.PointOfInterestType" {
+import {$PoiType, $PoiType$$Type} from "net.minecraft.world.entity.ai.village.poi.PoiType"
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$PoiTypeBuilder, $PoiTypeBuilder$$Type} from "dev.latvian.mods.kubejs.misc.PoiTypeBuilder"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $PointOfInterestType extends $RegistryKubeEvent<($PoiType)> {
+
+
+public "create"(name: string): $PoiTypeBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $PointOfInterestType$$Type = ($PointOfInterestType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $PointOfInterestType_ = $PointOfInterestType$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.forge_energy.ConstantEnergy$Configuration" {
+import {$RecordTypeInfo, $RecordTypeInfo$$Type} from "dev.latvian.mods.rhino.type.RecordTypeInfo"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $ConstantEnergy$Configuration extends $Record {
+static readonly "TYPE_INFO": $RecordTypeInfo
+
+constructor(maxExtract: integer, maxReceive: integer)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "maxReceive"(): integer
+public "maxExtract"(): integer
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ConstantEnergy$Configuration$$Type = ({"maxReceive"?: integer, "maxExtract"?: integer}) | ([maxReceive?: integer, maxExtract?: integer]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ConstantEnergy$Configuration_ = $ConstantEnergy$Configuration$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.clazz.members.FieldInfo" {
+import {$AnnotationHolder, $AnnotationHolder$$Type} from "moe.wolfgirl.probejs.lang.java.base.AnnotationHolder"
+import {$TypeDescriptor, $TypeDescriptor$$Type} from "moe.wolfgirl.probejs.lang.java.type.TypeDescriptor"
+import {$FieldInfo$FieldAttributes, $FieldInfo$FieldAttributes$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.members.FieldInfo$FieldAttributes"
+import {$JavaMembers$FieldInfo, $JavaMembers$FieldInfo$$Type} from "dev.latvian.mods.rhino.JavaMembers$FieldInfo"
+
+export class $FieldInfo extends $AnnotationHolder {
+readonly "name": string
+readonly "type": $TypeDescriptor
+readonly "attributes": $FieldInfo$FieldAttributes
+
+constructor(field: $JavaMembers$FieldInfo$$Type)
+
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FieldInfo$$Type = ($FieldInfo);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FieldInfo_ = $FieldInfo$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.mods.mekanism.heat.ConstantHeat$Configuration" {
+import {$RecordTypeInfo, $RecordTypeInfo$$Type} from "dev.latvian.mods.rhino.type.RecordTypeInfo"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $ConstantHeat$Configuration extends $Record {
+static readonly "TYPE_INFO": $RecordTypeInfo
+
+constructor(temperature: double, conductivity: double, capacity: double)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "capacity"(): double
+public "temperature"(): double
+public "conductivity"(): double
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ConstantHeat$Configuration$$Type = ({"temperature"?: double, "capacity"?: double, "conductivity"?: double}) | ([temperature?: double, capacity?: double, conductivity?: double]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ConstantHeat$Configuration_ = $ConstantHeat$Configuration$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.ScriptDump" {
+import {$Transpiler, $Transpiler$$Type} from "moe.wolfgirl.probejs.lang.transpiler.Transpiler"
+import {$Code, $Code$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.Code"
+import {$Map, $Map$$Type} from "java.util.Map"
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$Pair, $Pair$$Type} from "com.mojang.datafixers.util.Pair"
+import {$Predicate, $Predicate$$Type} from "java.util.function.Predicate"
+import {$Wrapped$Global, $Wrapped$Global$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ts.Wrapped$Global"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$Clazz, $Clazz$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.Clazz"
+import {$Supplier, $Supplier$$Type} from "java.util.function.Supplier"
+import {$ScriptType, $ScriptType$$Type} from "dev.latvian.mods.kubejs.script.ScriptType"
+import {$Set, $Set$$Type} from "java.util.Set"
+import {$Class, $Class$$Type} from "java.lang.Class"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$Path, $Path$$Type} from "java.nio.file.Path"
+import {$ScriptManager, $ScriptManager$$Type} from "dev.latvian.mods.kubejs.script.ScriptManager"
+
+export class $ScriptDump {
+static readonly "SERVER_DUMP": $Supplier<($ScriptDump)>
+static readonly "CLIENT_DUMP": $Supplier<($ScriptDump)>
+static readonly "STARTUP_DUMP": $Supplier<($ScriptDump)>
+readonly "scriptType": $ScriptType
+readonly "manager": $ScriptManager
+readonly "basePath": $Path
+readonly "scriptPath": $Path
+readonly "globals": $Map<(string), ($Pair<($Collection<(string)>), ($Wrapped$Global)>)>
+readonly "transpiler": $Transpiler
+readonly "recordedClasses": $Set<($Clazz)>
+ "dumped": integer
+ "total": integer
+
+constructor(manager: $ScriptManager$$Type, basePath: $Path$$Type, scriptPath: $Path$$Type, scriptPredicate: $Predicate$$Type<($Clazz)>)
+
+public "dump"(): void
+public "getSource"(): $Path
+public "assignType"(classPath: $ClassPath$$Type, type: $BaseType$$Type): void
+public "assignType"(classPath: $Class$$Type<(any)>, type: $BaseType$$Type): void
+public "assignType"(classPath: $Class$$Type<(any)>, name: string, type: $BaseType$$Type): void
+public "assignType"(classPath: $ClassPath$$Type, name: string, type: $BaseType$$Type): void
+public "getTest"(): $Path
+public "getGlobalFolder"(): $Path
+public "dumpGlobal"(): void
+public "ensurePath"(path: string, script: boolean): $Path
+public "ensurePath"(path: string): $Path
+public "addGlobal"(identifier: string, excludedNames: $Collection$$Type<(string)>, ...content: ($Code$$Type)[]): void
+public "addGlobal"(identifier: string, ...content: ($Code$$Type)[]): void
+public "retrieveClasses"(): $Set<($Class<(any)>)>
+public "acceptClasses"(classes: $Collection$$Type<($Clazz$$Type)>): void
+public "removeClasses"(): void
+public "dumpClasses"(): void
+public "dumpJSConfig"(): void
+public "getPackageFolder"(): $Path
+public "getTypeFolder"(): $Path
+get "source"(): $Path
+get "test"(): $Path
+get "globalFolder"(): $Path
+get "packageFolder"(): $Path
+get "typeFolder"(): $Path
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ScriptDump$$Type = ($ScriptDump);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ScriptDump_ = $ScriptDump$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.registries.info.CapabilityInfo" {
+import {$CapabilityBuilder$CapabilityFactory, $CapabilityBuilder$CapabilityFactory$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityBuilder$CapabilityFactory"
+import {$Direction, $Direction$$Type} from "net.minecraft.core.Direction"
+import {$BaseCapability, $BaseCapability$$Type} from "net.neoforged.neoforge.capabilities.BaseCapability"
+
+export class $CapabilityInfo<I> {
+readonly "capability": $BaseCapability<(any), (any)>
+
+constructor(capability: $BaseCapability$$Type<(any), (any)>, factory: $CapabilityBuilder$CapabilityFactory$$Type<(I), (any)>)
+
+public "matchDirection"(...directions: ($Direction$$Type)[]): $CapabilityInfo<(I)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $CapabilityInfo$$Type<I> = ($CapabilityInfo<(I)>);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $CapabilityInfo_<I> = $CapabilityInfo$$Type<(I)>;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSLambdaType$Builder" {
+import {$JSLambdaType, $JSLambdaType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSLambdaType"
+import {$ParamDecl, $ParamDecl$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.member.ParamDecl"
+import {$List, $List$$Type} from "java.util.List"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+
+export class $JSLambdaType$Builder {
+readonly "params": $List<($ParamDecl)>
+ "arrowFunction": boolean
+
+constructor()
+
+public "returnType"(type: $BaseType$$Type): $JSLambdaType$Builder
+public "method"(): $JSLambdaType$Builder
+public "param"(symbol: string, type: $BaseType$$Type, isOptional: boolean, isVarArg: boolean): $JSLambdaType$Builder
+public "param"(symbol: string, type: $BaseType$$Type, isOptional: boolean): $JSLambdaType$Builder
+public "param"(symbol: string, type: $BaseType$$Type): $JSLambdaType$Builder
+public "build"(): $JSLambdaType
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSLambdaType$Builder$$Type = ($JSLambdaType$Builder);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSLambdaType$Builder_ = $JSLambdaType$Builder$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.logic.Effect" {
+import {$ServerLevel, $ServerLevel$$Type} from "net.minecraft.server.level.ServerLevel"
+import {$BlockPos, $BlockPos$$Type} from "net.minecraft.core.BlockPos"
+import {$BlockEntity, $BlockEntity$$Type} from "net.minecraft.world.level.block.entity.BlockEntity"
+import {$BlockState, $BlockState$$Type} from "net.minecraft.world.level.block.state.BlockState"
+
+export class $Effect {
+
+constructor()
+
+public "apply"(condition: boolean, level: $ServerLevel$$Type, pos: $BlockPos$$Type, state: $BlockState$$Type, blockEntity: $BlockEntity$$Type): void
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Effect$$Type = ($Effect);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Effect_ = $Effect$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.snippet.Snippet" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$Registry, $Registry$$Type} from "net.minecraft.core.Registry"
+import {$List, $List$$Type} from "java.util.List"
+import {$Variable, $Variable$$Type} from "moe.wolfgirl.probejs.lang.snippet.parts.Variable"
+import {$ResourceKey, $ResourceKey$$Type} from "net.minecraft.resources.ResourceKey"
+import {$JsonObject, $JsonObject$$Type} from "com.google.gson.JsonObject"
+
+export class $Snippet {
+readonly "name": string
+
+constructor(name: string)
+
+public "compile"(): $JsonObject
+public "prefix"(prefix: string): $Snippet
+public "literal"(content: string): $Snippet
+public "description"(description: string): $Snippet
+public "getPrefixes"(): $List<(string)>
+public "registry"<T>(registry: $ResourceKey$$Type<($Registry<(T)>)>): $Snippet
+public "variable"(variable: $Variable$$Type): $Snippet
+public "newline"(): $Snippet
+public "choices"(enumeration: integer, choices: $Collection$$Type<(string)>): $Snippet
+public "choices"(choices: $Collection$$Type<(string)>): $Snippet
+public "tabStop"(enumeration: integer, defaultValue: string): $Snippet
+public "tabStop"(enumeration: integer): $Snippet
+public "tabStop"(): $Snippet
+get "prefixes"(): $List<(string)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Snippet$$Type = ($Snippet);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Snippet_ = $Snippet$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.mods.mekanism.MekLogicRegistry$Rules" {
+import {$ChemicalStack, $ChemicalStack$$Type} from "mekanism.api.chemical.ChemicalStack"
+import {$Direction, $Direction$$Type} from "net.minecraft.core.Direction"
+import {$Rule, $Rule$$Type} from "moe.wolfgirl.powerfuljs.custom.logic.Rule"
+
+export class $MekLogicRegistry$Rules {
+
+constructor()
+
+public static "machineRunning"(): $Rule
+public static "canDrainChemical"(chemicalStack: $ChemicalStack$$Type, direction: $Direction$$Type): $Rule
+public static "canFillChemical"(chemicalStack: $ChemicalStack$$Type, direction: $Direction$$Type): $Rule
+public static "factoryRunning"(): $Rule
+public static "hasChemical"(chemicalStack: $ChemicalStack$$Type, direction: $Direction$$Type): $Rule
+/**
+ * Test if the machine is **exactly** one tick away from producing results. Must be run after any tick modification effect.
+ */
+public static "machineAboutToFinish"(): $Rule
+/**
+ * Test if the machine is **exactly** one tick away from producing results. Must be run after any tick modification effect.
+ */
+public static "factoryAboutToFinish"(): $Rule
+public static "hasHeat"(heat: double, direction: $Direction$$Type): $Rule
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $MekLogicRegistry$Rules$$Type = ($MekLogicRegistry$Rules);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $MekLogicRegistry$Rules_ = $MekLogicRegistry$Rules$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.registries.info.EntityInfo" {
+import {$CapabilityValidator$EntityValidator, $CapabilityValidator$EntityValidator$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityValidator$EntityValidator"
+import {$CapabilityBuilder$CapabilityFactory, $CapabilityBuilder$CapabilityFactory$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityBuilder$CapabilityFactory"
+import {$ICapabilityProvider, $ICapabilityProvider$$Type} from "net.neoforged.neoforge.capabilities.ICapabilityProvider"
+import {$Entity, $Entity$$Type} from "net.minecraft.world.entity.Entity"
+import {$BaseCapability, $BaseCapability$$Type} from "net.neoforged.neoforge.capabilities.BaseCapability"
+import {$CapabilityInfo$Info, $CapabilityInfo$Info$$Type} from "moe.wolfgirl.powerfuljs.custom.registries.info.CapabilityInfo$Info"
+
+export class $EntityInfo extends $CapabilityInfo$Info<($Entity)> {
+readonly "capability": $BaseCapability<(any), (any)>
+
+constructor(capability: $BaseCapability$$Type<(any), (any)>, factory: $CapabilityBuilder$CapabilityFactory$$Type<($Entity$$Type), (any)>)
+
+public "validate"(validator: $CapabilityValidator$EntityValidator$$Type): $EntityInfo
+public "build"(): $ICapabilityProvider<(any), (any), (any)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $EntityInfo$$Type = ($EntityInfo);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $EntityInfo_ = $EntityInfo$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSArrayType" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$JSMemberType, $JSMemberType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSMemberType"
+import {$JSParam, $JSParam$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSParam"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $JSArrayType extends $JSMemberType {
+readonly "members": $Collection<($JSParam)>
+
+constructor(members: $Collection$$Type<($JSParam$$Type)>)
+
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSArrayType$$Type = ($JSArrayType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSArrayType_ = $JSArrayType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.TSVariableType" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $TSVariableType extends $BaseType {
+readonly "symbol": string
+ "extendsType": $BaseType
+
+constructor(symbol: string, extendsType: $BaseType$$Type)
+
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $TSVariableType$$Type = ($TSVariableType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $TSVariableType_ = $TSVariableType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSJoinedType$Intersection" {
+import {$JSJoinedType, $JSJoinedType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSJoinedType"
+import {$List, $List$$Type} from "java.util.List"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+
+export class $JSJoinedType$Intersection extends $JSJoinedType {
+readonly "delimiter": string
+readonly "types": $List<($BaseType)>
+
+constructor(types: $List$$Type<($BaseType$$Type)>)
+
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSJoinedType$Intersection$$Type = ($JSJoinedType$Intersection);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSJoinedType$Intersection_ = $JSJoinedType$Intersection$$Type;
+}}
+declare module "moe.wolfgirl.probejs.events.ScriptEventJS" {
+import {$ScriptDump, $ScriptDump$$Type} from "moe.wolfgirl.probejs.lang.typescript.ScriptDump"
+import {$KubeEvent, $KubeEvent$$Type} from "dev.latvian.mods.kubejs.event.KubeEvent"
+import {$TypeConverter, $TypeConverter$$Type} from "moe.wolfgirl.probejs.lang.transpiler.TypeConverter"
+import {$ScriptType, $ScriptType$$Type} from "dev.latvian.mods.kubejs.script.ScriptType"
+
+export class $ScriptEventJS implements $KubeEvent {
+
+constructor(dump: $ScriptDump$$Type)
+
+public "getTypeConverter"(): $TypeConverter
+public "getScriptType"(): $ScriptType
+/**
+ * Stops the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `exit` denotes a `default` outcome.
+ */
+public "exit"(arg1: any): any
+/**
+ * Stops the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `exit` denotes a `default` outcome.
+ */
+public "exit"(): any
+/**
+ * Cancels the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `cancel` denotes a `false` outcome.
+ */
+public "cancel"(arg1: any): any
+/**
+ * Cancels the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `cancel` denotes a `false` outcome.
+ */
+public "cancel"(): any
+/**
+ * Stops the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `success` denotes a `true` outcome.
+ */
+public "success"(arg1: any): any
+/**
+ * Stops the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `success` denotes a `true` outcome.
+ */
+public "success"(): any
+get "typeConverter"(): $TypeConverter
+get "scriptType"(): $ScriptType
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ScriptEventJS$$Type = ($ScriptEventJS);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ScriptEventJS_ = $ScriptEventJS$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.VillagerType" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$VillagerTypeBuilder, $VillagerTypeBuilder$$Type} from "dev.latvian.mods.kubejs.misc.VillagerTypeBuilder"
+import {$VillagerType as $VillagerType$0, $VillagerType$$Type as $VillagerType$0$$Type} from "net.minecraft.world.entity.npc.VillagerType"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $VillagerType extends $RegistryKubeEvent<($VillagerType$0)> {
+
+
+public "create"(name: string): $VillagerTypeBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $VillagerType$$Type = ($VillagerType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $VillagerType_ = $VillagerType$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.mods.mekanism.MekLogicRegistry$Effects" {
+import {$ChemicalStack, $ChemicalStack$$Type} from "mekanism.api.chemical.ChemicalStack"
+import {$Effect, $Effect$$Type} from "moe.wolfgirl.powerfuljs.custom.logic.Effect"
+import {$Direction, $Direction$$Type} from "net.minecraft.core.Direction"
+
+export class $MekLogicRegistry$Effects {
+
+constructor()
+
+public static "addFactoryProgress"(ticks: integer): $Effect
+public static "fillChemical"(chemicalStack: $ChemicalStack$$Type, forced: boolean, direction: $Direction$$Type): $Effect
+public static "drainChemical"(chemicalStack: $ChemicalStack$$Type, forced: boolean, direction: $Direction$$Type): $Effect
+public static "addProgress"(ticks: integer): $Effect
+public static "addHeat"(heat: double, direction: $Direction$$Type): $Effect
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $MekLogicRegistry$Effects$$Type = ($MekLogicRegistry$Effects);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $MekLogicRegistry$Effects_ = $MekLogicRegistry$Effects$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.Attribute" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$Attribute as $Attribute$0, $Attribute$$Type as $Attribute$0$$Type} from "net.minecraft.world.entity.ai.attributes.Attribute"
+import {$AttributeBuilder, $AttributeBuilder$$Type} from "dev.latvian.mods.kubejs.entity.AttributeBuilder"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $Attribute extends $RegistryKubeEvent<($Attribute$0)> {
+
+
+public "create"(name: string): $AttributeBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Attribute$$Type = ($Attribute);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Attribute_ = $Attribute$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.member.ParamDecl" {
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$List, $List$$Type} from "java.util.List"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $ParamDecl {
+ "name": string
+ "type": $BaseType
+ "varArg": boolean
+ "optional": boolean
+
+constructor(name: string, type: $BaseType$$Type, varArg: boolean, optional: boolean)
+
+public "equals"(obj: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "format"(index: integer, declaration: $Declaration$$Type, formatType: $BaseType$FormatType$$Type): string
+public static "formatParams"(params: $List$$Type<($ParamDecl$$Type)>, declaration: $Declaration$$Type, formatType: $BaseType$FormatType$$Type): string
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ParamDecl$$Type = ($ParamDecl);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ParamDecl_ = $ParamDecl$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.clazz.members.MethodInfo" {
+import {$TypeVariableHolder, $TypeVariableHolder$$Type} from "moe.wolfgirl.probejs.lang.java.base.TypeVariableHolder"
+import {$TypeVariable, $TypeVariable$$Type} from "java.lang.reflect.TypeVariable"
+import {$JavaMembers$MethodInfo, $JavaMembers$MethodInfo$$Type} from "dev.latvian.mods.rhino.JavaMembers$MethodInfo"
+import {$VariableType, $VariableType$$Type} from "moe.wolfgirl.probejs.lang.java.type.impl.VariableType"
+import {$Map, $Map$$Type} from "java.util.Map"
+import {$Type, $Type$$Type} from "java.lang.reflect.Type"
+import {$List, $List$$Type} from "java.util.List"
+import {$TypeDescriptor, $TypeDescriptor$$Type} from "moe.wolfgirl.probejs.lang.java.type.TypeDescriptor"
+import {$ParamInfo, $ParamInfo$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.members.ParamInfo"
+import {$MethodInfo$MethodAttributes, $MethodInfo$MethodAttributes$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.members.MethodInfo$MethodAttributes"
+
+export class $MethodInfo extends $TypeVariableHolder {
+readonly "name": string
+readonly "params": $List<($ParamInfo)>
+ "returnType": $TypeDescriptor
+readonly "attributes": $MethodInfo$MethodAttributes
+readonly "variableTypes": $List<($VariableType)>
+
+constructor(methodInfo: $JavaMembers$MethodInfo$$Type, remapper: $Map$$Type<($TypeVariable$$Type<(any)>), ($Type$$Type)>)
+
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $MethodInfo$$Type = ($MethodInfo);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $MethodInfo_ = $MethodInfo$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.snippet.SnippetDump" {
+import {$Snippet, $Snippet$$Type} from "moe.wolfgirl.probejs.lang.snippet.Snippet"
+import {$List, $List$$Type} from "java.util.List"
+import {$Path, $Path$$Type} from "java.nio.file.Path"
+
+export class $SnippetDump {
+ "snippets": $List<($Snippet)>
+
+constructor()
+
+public "writeTo"(path: $Path$$Type): void
+public "snippet"(name: string): $Snippet
+public "fromDocs"(): void
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $SnippetDump$$Type = ($SnippetDump);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $SnippetDump_ = $SnippetDump$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.registries.info.ItemStackInfo" {
+import {$ItemStack, $ItemStack$$Type} from "net.minecraft.world.item.ItemStack"
+import {$CapabilityBuilder$CapabilityFactory, $CapabilityBuilder$CapabilityFactory$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityBuilder$CapabilityFactory"
+import {$ICapabilityProvider, $ICapabilityProvider$$Type} from "net.neoforged.neoforge.capabilities.ICapabilityProvider"
+import {$CapabilityValidator$ItemValidator, $CapabilityValidator$ItemValidator$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityValidator$ItemValidator"
+import {$BaseCapability, $BaseCapability$$Type} from "net.neoforged.neoforge.capabilities.BaseCapability"
+import {$CapabilityInfo$Info, $CapabilityInfo$Info$$Type} from "moe.wolfgirl.powerfuljs.custom.registries.info.CapabilityInfo$Info"
+
+export class $ItemStackInfo extends $CapabilityInfo$Info<($ItemStack)> {
+readonly "capability": $BaseCapability<(any), (any)>
+
+constructor(capability: $BaseCapability$$Type<(any), (any)>, factory: $CapabilityBuilder$CapabilityFactory$$Type<($ItemStack$$Type), (any)>)
+
+public "validate"(validator: $CapabilityValidator$ItemValidator$$Type): $ItemStackInfo
+public "build"(): $ICapabilityProvider<(any), (any), (any)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ItemStackInfo$$Type = ($ItemStackInfo);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ItemStackInfo_ = $ItemStackInfo$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSTypeOfType" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $JSTypeOfType extends $BaseType {
+readonly "inner": $BaseType
+
+constructor(inner: $BaseType$$Type)
+
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSTypeOfType$$Type = ($JSTypeOfType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSTypeOfType_ = $JSTypeOfType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.Types" {
+import {$JSPrimitiveType, $JSPrimitiveType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSPrimitiveType"
+import {$TSOptionalType, $TSOptionalType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.TSOptionalType"
+import {$JSArrayType$Builder, $JSArrayType$Builder$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSArrayType$Builder"
+import {$Predicate, $Predicate$$Type} from "java.util.function.Predicate"
+import {$JSObjectType$Builder, $JSObjectType$Builder$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSObjectType$Builder"
+import {$ImportInfo$Type, $ImportInfo$Type$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo$Type"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$JSTypeOfType, $JSTypeOfType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSTypeOfType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+import {$BiFunction, $BiFunction$$Type} from "java.util.function.BiFunction"
+import {$TSParamType, $TSParamType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.TSParamType"
+import {$JSJoinedType$Intersection, $JSJoinedType$Intersection$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSJoinedType$Intersection"
+import {$TSVariableType, $TSVariableType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.TSVariableType"
+import {$JSArrayType, $JSArrayType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSArrayType"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$JSLambdaType$Builder, $JSLambdaType$Builder$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSLambdaType$Builder"
+import {$Class, $Class$$Type} from "java.lang.Class"
+import {$TSClassType, $TSClassType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.TSClassType"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+
+export interface $Types {
+
+}
+
+export namespace $Types {
+const ANY: $JSPrimitiveType
+const BOOLEAN: $JSPrimitiveType
+const NUMBER: $JSPrimitiveType
+const STRING: $JSPrimitiveType
+const NEVER: $JSPrimitiveType
+const UNKNOWN: $JSPrimitiveType
+const VOID: $JSPrimitiveType
+const THIS: $JSPrimitiveType
+const OBJECT: $JSPrimitiveType
+const NULL: $JSPrimitiveType
+const EMPTY_ARRAY: $JSArrayType
+function type(classPath: $ClassPath$$Type): $TSClassType
+function type(clazz: $Class$$Type<(any)>): $TSClassType
+function filter(type: $BaseType$$Type, typePredicate: $Predicate$$Type<($BaseType)>): $BaseType
+function generic(symbol: string): $TSVariableType
+function generic(symbol: string, extendOn: $BaseType$$Type): $TSVariableType
+function lambda(): $JSLambdaType$Builder
+function optional(type: $BaseType$$Type): $TSOptionalType
+function literal(content: any): $JSPrimitiveType
+function or(...types: ($BaseType$$Type)[]): $BaseType
+function object(): $JSObjectType$Builder
+function and(...types: ($BaseType$$Type)[]): $JSJoinedType$Intersection
+function custom(formatter: $BiFunction$$Type<($Declaration), ($BaseType$FormatType), (string)>, ...imports: ($ImportInfo$$Type)[]): $BaseType
+function parameterized(base: $BaseType$$Type, ...params: ($BaseType$$Type)[]): $TSParamType
+function arrayOf(): $JSArrayType$Builder
+function primitive(type: string): $JSPrimitiveType
+function typeOf(classType: $BaseType$$Type): $JSTypeOfType
+function typeOf(classPath: $ClassPath$$Type): $JSTypeOfType
+function typeOf(clazz: $Class$$Type<(any)>): $JSTypeOfType
+function ignoreContext(type: $BaseType$$Type, formatType: $BaseType$FormatType$$Type): $BaseType
+function typeMaybeGeneric(clazz: $Class$$Type<(any)>): $BaseType
+function ignoreImport(type: $BaseType$$Type, importType: $ImportInfo$Type$$Type): $BaseType
+const probejs$$marker: never
+}
+export class $Types$$Static implements $Types {
+static readonly "ANY": $JSPrimitiveType
+static readonly "BOOLEAN": $JSPrimitiveType
+static readonly "NUMBER": $JSPrimitiveType
+static readonly "STRING": $JSPrimitiveType
+static readonly "NEVER": $JSPrimitiveType
+static readonly "UNKNOWN": $JSPrimitiveType
+static readonly "VOID": $JSPrimitiveType
+static readonly "THIS": $JSPrimitiveType
+static readonly "OBJECT": $JSPrimitiveType
+static readonly "NULL": $JSPrimitiveType
+static readonly "EMPTY_ARRAY": $JSArrayType
+
+
+static "type"(classPath: $ClassPath$$Type): $TSClassType
+static "type"(clazz: $Class$$Type<(any)>): $TSClassType
+static "filter"(type: $BaseType$$Type, typePredicate: $Predicate$$Type<($BaseType)>): $BaseType
+static "generic"(symbol: string): $TSVariableType
+static "generic"(symbol: string, extendOn: $BaseType$$Type): $TSVariableType
+static "lambda"(): $JSLambdaType$Builder
+static "optional"(type: $BaseType$$Type): $TSOptionalType
+static "literal"(content: any): $JSPrimitiveType
+static "or"(...types: ($BaseType$$Type)[]): $BaseType
+static "object"(): $JSObjectType$Builder
+static "and"(...types: ($BaseType$$Type)[]): $JSJoinedType$Intersection
+static "custom"(formatter: $BiFunction$$Type<($Declaration), ($BaseType$FormatType), (string)>, ...imports: ($ImportInfo$$Type)[]): $BaseType
+static "parameterized"(base: $BaseType$$Type, ...params: ($BaseType$$Type)[]): $TSParamType
+static "arrayOf"(): $JSArrayType$Builder
+static "primitive"(type: string): $JSPrimitiveType
+static "typeOf"(classType: $BaseType$$Type): $JSTypeOfType
+static "typeOf"(classPath: $ClassPath$$Type): $JSTypeOfType
+static "typeOf"(clazz: $Class$$Type<(any)>): $JSTypeOfType
+static "ignoreContext"(type: $BaseType$$Type, formatType: $BaseType$FormatType$$Type): $BaseType
+static "typeMaybeGeneric"(clazz: $Class$$Type<(any)>): $BaseType
+static "ignoreImport"(type: $BaseType$$Type, importType: $ImportInfo$Type$$Type): $BaseType
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Types$$Type = ($Types);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Types_ = $Types$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.registries.LogicRegistry$Rules" {
+import {$CompoundTag, $CompoundTag$$Type} from "net.minecraft.nbt.CompoundTag"
+import {$ItemStack, $ItemStack$$Type} from "net.minecraft.world.item.ItemStack"
+import {$Ingredient, $Ingredient$$Type} from "net.minecraft.world.item.crafting.Ingredient"
+import {$TagKey, $TagKey$$Type} from "net.minecraft.tags.TagKey"
+import {$Direction, $Direction$$Type} from "net.minecraft.core.Direction"
+import {$SizedFluidIngredient, $SizedFluidIngredient$$Type} from "net.neoforged.neoforge.fluids.crafting.SizedFluidIngredient"
+import {$FluidStack, $FluidStack$$Type} from "net.neoforged.neoforge.fluids.FluidStack"
+import {$Biome, $Biome$$Type} from "net.minecraft.world.level.biome.Biome"
+import {$SizedIngredient, $SizedIngredient$$Type} from "net.neoforged.neoforge.common.crafting.SizedIngredient"
+import {$BlockStatePredicate, $BlockStatePredicate$$Type} from "dev.latvian.mods.kubejs.block.state.BlockStatePredicate"
+import {$Rule, $Rule$$Type} from "moe.wolfgirl.powerfuljs.custom.logic.Rule"
+
+export class $LogicRegistry$Rules {
+
+constructor()
+
+public static "or"(...rules: ($Rule$$Type)[]): $Rule
+public static "and"(...rules: ($Rule$$Type)[]): $Rule
+public static "always"(): $Rule
+public static "always"(state: boolean): $Rule
+public static "brighterThan"(brightness: integer): $Rule
+public static "canExtractFluid"(fluidStack: $FluidStack$$Type, direction: $Direction$$Type): $Rule
+public static "canInsertFluid"(fluidStack: $FluidStack$$Type, direction: $Direction$$Type): $Rule
+public static "hasSunlight"(): $Rule
+public static "canExtractItem"(itemStack: $ItemStack$$Type, direction: $Direction$$Type): $Rule
+public static "canExtractEnergy"(energy: integer, direction: $Direction$$Type): $Rule
+public static "furnaceRunning"(): $Rule
+public static "canReceiveEnergy"(energy: integer, direction: $Direction$$Type): $Rule
+public static "hasItem"(item: $SizedIngredient$$Type, direction: $Direction$$Type): $Rule
+public static "hasItem"(item: $Ingredient$$Type, count: integer, direction: $Direction$$Type): $Rule
+public static "every"(ticks: integer): $Rule
+public static "matchBlock"(blockState: $BlockStatePredicate$$Type): $Rule
+public static "nbt"(tag: $CompoundTag$$Type): $Rule
+public static "hasEnergy"(energy: integer, direction: $Direction$$Type): $Rule
+public static "canInsertItem"(itemStack: $ItemStack$$Type, direction: $Direction$$Type): $Rule
+/**
+ * Test if the furnace is **exactly** one tick away from producing results. Must be run after any tick modification effect.
+ */
+public static "furnaceAboutToFinish"(): $Rule
+public static "withinTime"(start: integer, end: integer): $Rule
+public static "hasFluid"(fluidIngredient: $SizedFluidIngredient$$Type, direction: $Direction$$Type): $Rule
+public static "ownerStage"(stage: string): $Rule
+public static "higherThan"(y: integer): $Rule
+public static "inBiome"(biomeTag: $TagKey$$Type<($Biome)>): $Rule
+public static "chanced"(chance: double): $Rule
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $LogicRegistry$Rules$$Type = ($LogicRegistry$Rules);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $LogicRegistry$Rules_ = $LogicRegistry$Rules$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.base.CapabilityValidator$EntityValidator" {
+import {$Entity, $Entity$$Type} from "net.minecraft.world.entity.Entity"
+import {$CapabilityValidator, $CapabilityValidator$$Type} from "moe.wolfgirl.powerfuljs.custom.base.CapabilityValidator"
+
+export interface $CapabilityValidator$EntityValidator extends $CapabilityValidator<($Entity)> {
+
+ "test"(info: $Entity$$Type, context: any): boolean
+
+(info: $Entity, context: any): boolean
+}
+
+export namespace $CapabilityValidator$EntityValidator {
+const probejs$$marker: never
+}
+export class $CapabilityValidator$EntityValidator$$Static implements $CapabilityValidator$EntityValidator {
+
+
+ "test"(info: $Entity$$Type, context: any): boolean
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $CapabilityValidator$EntityValidator$$Type = ((info: $Entity, context: any) => boolean);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $CapabilityValidator$EntityValidator_ = $CapabilityValidator$EntityValidator$$Type;
+}}
+declare module "moe.wolfgirl.probejs.events.TypeAssignmentEventJS" {
+import {$ScriptDump, $ScriptDump$$Type} from "moe.wolfgirl.probejs.lang.typescript.ScriptDump"
+import {$KubeEvent, $KubeEvent$$Type} from "dev.latvian.mods.kubejs.event.KubeEvent"
+import {$Class, $Class$$Type} from "java.lang.Class"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+
+export class $TypeAssignmentEventJS implements $KubeEvent {
+
+constructor(scriptDump: $ScriptDump$$Type)
+
+public "assignType"(clazz: $Class$$Type<(any)>, baseType: $BaseType$$Type): void
+/**
+ * Stops the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `exit` denotes a `default` outcome.
+ */
+public "exit"(arg1: any): any
+/**
+ * Stops the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `exit` denotes a `default` outcome.
+ */
+public "exit"(): any
+/**
+ * Cancels the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `cancel` denotes a `false` outcome.
+ */
+public "cancel"(arg1: any): any
+/**
+ * Cancels the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `cancel` denotes a `false` outcome.
+ */
+public "cancel"(): any
+/**
+ * Stops the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `success` denotes a `true` outcome.
+ */
+public "success"(arg1: any): any
+/**
+ * Stops the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `success` denotes a `true` outcome.
+ */
+public "success"(): any
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $TypeAssignmentEventJS$$Type = ($TypeAssignmentEventJS);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $TypeAssignmentEventJS_ = $TypeAssignmentEventJS$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.member.MethodDecl" {
+import {$CommentableCode, $CommentableCode$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.member.CommentableCode"
+import {$ParamDecl, $ParamDecl$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.member.ParamDecl"
+import {$TSVariableType, $TSVariableType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.TSVariableType"
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$List, $List$$Type} from "java.util.List"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$MethodDeclaration, $MethodDeclaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ts.MethodDeclaration"
+
+export class $MethodDecl extends $CommentableCode {
+ "name": string
+ "isAbstract": boolean
+ "isStatic": boolean
+ "isInterface": boolean
+ "variableTypes": $List<($TSVariableType)>
+ "params": $List<($ParamDecl)>
+ "returnType": $BaseType
+ "content": string
+readonly "comments": $List<(string)>
+
+constructor(name: string, variableTypes: $List$$Type<($TSVariableType$$Type)>, params: $List$$Type<($ParamDecl$$Type)>, returnType: $BaseType$$Type)
+
+public "formatRaw"(declaration: $Declaration$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+public "asDeclaration"(): $MethodDeclaration
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $MethodDecl$$Type = ($MethodDecl);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $MethodDecl_ = $MethodDecl$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.type.impl.VariableType" {
+import {$TypeVariable, $TypeVariable$$Type} from "java.lang.reflect.TypeVariable"
+import {$List, $List$$Type} from "java.util.List"
+import {$AnnotatedTypeVariable, $AnnotatedTypeVariable$$Type} from "java.lang.reflect.AnnotatedTypeVariable"
+import {$TypeDescriptor, $TypeDescriptor$$Type} from "moe.wolfgirl.probejs.lang.java.type.TypeDescriptor"
+import {$Stream, $Stream$$Type} from "java.util.stream.Stream"
+
+export class $VariableType extends $TypeDescriptor {
+ "symbol": string
+ "descriptors": $List<($TypeDescriptor)>
+
+constructor(typeVariable: $TypeVariable$$Type<(any)>, checkBounds: boolean)
+constructor(typeVariable: $AnnotatedTypeVariable$$Type, checkBounds: boolean)
+constructor(typeVariable: $TypeVariable$$Type<(any)>)
+constructor(typeVariable: $AnnotatedTypeVariable$$Type)
+
+public "stream"(): $Stream<($TypeDescriptor)>
+public "getSymbol"(): string
+public "getDescriptors"(): $List<($TypeDescriptor)>
+get "symbol"(): string
+get "descriptors"(): $List<($TypeDescriptor)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $VariableType$$Type = ($VariableType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $VariableType_ = $VariableType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSObjectType$Builder" {
+import {$JSObjectType, $JSObjectType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSObjectType"
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$JSMemberType$Builder, $JSMemberType$Builder$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSMemberType$Builder"
+import {$JSParam, $JSParam$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSParam"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+
+export class $JSObjectType$Builder extends $JSMemberType$Builder<($JSObjectType$Builder), ($JSObjectType)> {
+readonly "members": $Collection<($JSParam)>
+
+constructor()
+
+public "build"(): $BaseType
+public "buildIndexed"(): $JSObjectType
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSObjectType$Builder$$Type = ($JSObjectType$Builder);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSObjectType$Builder_ = $JSObjectType$Builder$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.logic.effects.EffectJS$Apply" {
+import {$BlockContainerJS, $BlockContainerJS$$Type} from "dev.latvian.mods.kubejs.level.BlockContainerJS"
+
+export interface $EffectJS$Apply {
+
+ "apply"(block: $BlockContainerJS$$Type): void
+
+(block: $BlockContainerJS): void
+}
+
+export namespace $EffectJS$Apply {
+const probejs$$marker: never
+}
+export class $EffectJS$Apply$$Static implements $EffectJS$Apply {
+
+
+ "apply"(block: $BlockContainerJS$$Type): void
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $EffectJS$Apply$$Type = ((block: $BlockContainerJS) => void);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $EffectJS$Apply_ = $EffectJS$Apply$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.neoforge.FluidType" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$FluidTypeBuilder, $FluidTypeBuilder$$Type} from "dev.latvian.mods.kubejs.fluid.FluidTypeBuilder"
+import {$FluidType as $FluidType$0, $FluidType$$Type as $FluidType$0$$Type} from "net.neoforged.neoforge.fluids.FluidType"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $FluidType extends $RegistryKubeEvent<($FluidType$0)> {
+
+
+public "create"(name: string): $FluidTypeBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FluidType$$Type = ($FluidType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FluidType_ = $FluidType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.Block" {
+import {$CarpetBlockBuilder, $CarpetBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.CarpetBlockBuilder"
+import {$SlabBlockBuilder, $SlabBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.SlabBlockBuilder"
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$BasicBlockJS$Builder, $BasicBlockJS$Builder$$Type} from "dev.latvian.mods.kubejs.block.custom.BasicBlockJS$Builder"
+import {$DoorBlockBuilder, $DoorBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.DoorBlockBuilder"
+import {$StairBlockBuilder, $StairBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.StairBlockBuilder"
+import {$Block as $Block$0, $Block$$Type as $Block$0$$Type} from "net.minecraft.world.level.block.Block"
+import {$PressurePlateBlockBuilder, $PressurePlateBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.PressurePlateBlockBuilder"
+import {$CropBlockBuilder, $CropBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.CropBlockBuilder"
+import {$ButtonBlockBuilder, $ButtonBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.ButtonBlockBuilder"
+import {$FenceBlockBuilder, $FenceBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.FenceBlockBuilder"
+import {$TrapdoorBlockBuilder, $TrapdoorBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.TrapdoorBlockBuilder"
+import {$WallBlockBuilder, $WallBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.WallBlockBuilder"
+import {$HorizontalDirectionalBlockBuilder, $HorizontalDirectionalBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.HorizontalDirectionalBlockBuilder"
+import {$FenceGateBlockBuilder, $FenceGateBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.FenceGateBlockBuilder"
+import {$FallingBlockBuilder, $FallingBlockBuilder$$Type} from "dev.latvian.mods.kubejs.block.custom.FallingBlockBuilder"
+import {$DetectorBlock$Builder, $DetectorBlock$Builder$$Type} from "dev.latvian.mods.kubejs.block.DetectorBlock$Builder"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $Block extends $RegistryKubeEvent<($Block$0)> {
+
+
+public "create"(name: string): $BasicBlockJS$Builder
+public "create"(name: string, type: "detector"): $DetectorBlock$Builder
+public "create"(name: string, type: "slab"): $SlabBlockBuilder
+public "create"(name: string, type: "stairs"): $StairBlockBuilder
+public "create"(name: string, type: "fence"): $FenceBlockBuilder
+public "create"(name: string, type: "wall"): $WallBlockBuilder
+public "create"(name: string, type: "fence_gate"): $FenceGateBlockBuilder
+public "create"(name: string, type: "pressure_plate"): $PressurePlateBlockBuilder
+public "create"(name: string, type: "button"): $ButtonBlockBuilder
+public "create"(name: string, type: "falling"): $FallingBlockBuilder
+public "create"(name: string, type: "crop"): $CropBlockBuilder
+public "create"(name: string, type: "cardinal"): $HorizontalDirectionalBlockBuilder
+public "create"(name: string, type: "carpet"): $CarpetBlockBuilder
+public "create"(name: string, type: "door"): $DoorBlockBuilder
+public "create"(name: string, type: "trapdoor"): $TrapdoorBlockBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Block$$Type = ($Block);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Block_ = $Block$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.base.AnnotationHolder" {
+import {$Annotation, $Annotation$$Type} from "java.lang.annotation.Annotation"
+import {$List, $List$$Type} from "java.util.List"
+import {$Class, $Class$$Type} from "java.lang.Class"
+
+export class $AnnotationHolder {
+
+constructor(annotations: ($Annotation$$Type)[])
+
+public "getAnnotation"<T extends $Annotation>(type: $Class$$Type<(T)>): T
+public "getAnnotations"<T extends $Annotation>(type: $Class$$Type<(T)>): $List<(T)>
+public "getAnnotations"(): ($Annotation)[]
+public "hasAnnotation"(annotation: $Class$$Type<($Annotation$$Type)>): boolean
+get "annotations"(): ($Annotation)[]
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $AnnotationHolder$$Type = ($AnnotationHolder);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $AnnotationHolder_ = $AnnotationHolder$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.mods.mekanism.chemical.storage.FixedChemicalStorage$Configuration" {
+import {$Chemical, $Chemical$$Type} from "mekanism.api.chemical.Chemical"
+import {$RecordTypeInfo, $RecordTypeInfo$$Type} from "dev.latvian.mods.rhino.type.RecordTypeInfo"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $FixedChemicalStorage$Configuration extends $Record {
+static readonly "TYPE_INFO": $RecordTypeInfo
+
+constructor(capacity: long, maxReceive: long, maxExtract: long, validChemical: $Chemical$$Type)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "capacity"(): long
+public "maxReceive"(): long
+public "maxExtract"(): long
+public "validChemical"(): $Chemical
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FixedChemicalStorage$Configuration$$Type = ({"maxExtract"?: long, "validChemical"?: $Chemical$$Type, "maxReceive"?: long, "capacity"?: long}) | ([maxExtract?: long, validChemical?: $Chemical$$Type, maxReceive?: long, capacity?: long]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FixedChemicalStorage$Configuration_ = $FixedChemicalStorage$Configuration$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.snippet.parts.Variable" {
+import {$Enum, $Enum$$Type} from "java.lang.Enum"
+import {$SnippetPart, $SnippetPart$$Type} from "moe.wolfgirl.probejs.lang.snippet.parts.SnippetPart"
+
+export class $Variable extends $Enum<($Variable)> implements $SnippetPart {
+static readonly "LINE_COMMENT": $Variable
+static readonly "BLOCK_COMMENT_END": $Variable
+static readonly "BLOCK_COMMENT_START": $Variable
+static readonly "UUID": $Variable
+static readonly "RANDOM_HEX": $Variable
+static readonly "RANDOM": $Variable
+static readonly "CURRENT_TIMEZONE_OFFSET": $Variable
+static readonly "CURRENT_SECONDS_UNIX": $Variable
+static readonly "CURRENT_SECOND": $Variable
+static readonly "CURRENT_MINUTE": $Variable
+static readonly "CURRENT_HOUR": $Variable
+static readonly "CURRENT_DAY_NAME_SHORT": $Variable
+static readonly "CURRENT_DAY_NAME": $Variable
+static readonly "CURRENT_DATE": $Variable
+static readonly "CURRENT_MONTH_NAME_SHORT": $Variable
+static readonly "CURRENT_MONTH_NAME": $Variable
+static readonly "CURRENT_MONTH": $Variable
+static readonly "CURRENT_YEAR_SHORT": $Variable
+static readonly "CURRENT_YEAR": $Variable
+static readonly "CURSOR_NUMBER": $Variable
+static readonly "CURSOR_INDEX": $Variable
+static readonly "WORKSPACE_FOLDER": $Variable
+static readonly "WORKSPACE_NAME": $Variable
+static readonly "CLIPBOARD": $Variable
+static readonly "RELATIVE_FILEPATH": $Variable
+static readonly "TM_FILEPATH": $Variable
+static readonly "TM_DIRECTORY": $Variable
+static readonly "TM_FILENAME_BASE": $Variable
+static readonly "TM_FILENAME": $Variable
+static readonly "TM_LINE_NUMBER": $Variable
+static readonly "TM_LINE_INDEX": $Variable
+static readonly "TM_CURRENT_WORD": $Variable
+static readonly "TM_CURRENT_LINE": $Variable
+static readonly "TM_SELECTED_TEXT": $Variable
+
+
+public static "values"(): ($Variable)[]
+public static "valueOf"(name: string): $Variable
+public "format"(): string
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Variable$$Type = (("line_comment") | ("block_comment_end") | ("block_comment_start") | ("uuid") | ("random_hex") | ("random") | ("current_timezone_offset") | ("current_seconds_unix") | ("current_second") | ("current_minute") | ("current_hour") | ("current_day_name_short") | ("current_day_name") | ("current_date") | ("current_month_name_short") | ("current_month_name") | ("current_month") | ("current_year_short") | ("current_year") | ("cursor_number") | ("cursor_index") | ("workspace_folder") | ("workspace_name") | ("clipboard") | ("relative_filepath") | ("tm_filepath") | ("tm_directory") | ("tm_filename_base") | ("tm_filename") | ("tm_line_number") | ("tm_line_index") | ("tm_current_word") | ("tm_current_line") | ("tm_selected_text"));
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Variable_ = $Variable$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.transpiler.TypeConverter" {
+import {$TypeInfo, $TypeInfo$$Type} from "dev.latvian.mods.rhino.type.TypeInfo"
+import {$Map, $Map$$Type} from "java.util.Map"
+import {$Class, $Class$$Type} from "java.lang.Class"
+import {$TypeDescriptor, $TypeDescriptor$$Type} from "moe.wolfgirl.probejs.lang.java.type.TypeDescriptor"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$ScriptManager, $ScriptManager$$Type} from "dev.latvian.mods.kubejs.script.ScriptManager"
+
+export class $TypeConverter {
+readonly "predefinedTypes": $Map<($ClassPath), ($BaseType)>
+readonly "scriptManager": $ScriptManager
+
+constructor(manager: $ScriptManager$$Type)
+
+public "convertType"(typeInfo: $TypeInfo$$Type, baseType: boolean): $BaseType
+public "convertType"(typeInfo: $TypeInfo$$Type): $BaseType
+public "convertType"(descriptor: $TypeDescriptor$$Type): $BaseType
+public "addType"(clazz: $Class$$Type<(any)>, type: $BaseType$$Type): void
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $TypeConverter$$Type = ($TypeConverter);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $TypeConverter_ = $TypeConverter$$Type;
+}}
+declare module "moe.wolfgirl.probejs.events.TypingModificationEventJS" {
+import {$ScriptDump, $ScriptDump$$Type} from "moe.wolfgirl.probejs.lang.typescript.ScriptDump"
+import {$ScriptEventJS, $ScriptEventJS$$Type} from "moe.wolfgirl.probejs.events.ScriptEventJS"
+import {$Map, $Map$$Type} from "java.util.Map"
+import {$Class, $Class$$Type} from "java.lang.Class"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$TypeScriptFile, $TypeScriptFile$$Type} from "moe.wolfgirl.probejs.lang.typescript.TypeScriptFile"
+import {$Consumer, $Consumer$$Type} from "java.util.function.Consumer"
+
+export class $TypingModificationEventJS extends $ScriptEventJS {
+
+constructor(dump: $ScriptDump$$Type, files: $Map$$Type<($ClassPath$$Type), ($TypeScriptFile$$Type)>)
+
+public "modify"(clazz: $Class$$Type<(any)>, file: $Consumer$$Type<($TypeScriptFile)>): void
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $TypingModificationEventJS$$Type = ($TypingModificationEventJS);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $TypingModificationEventJS_ = $TypingModificationEventJS$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.fluid_item.FixedItemFluidTank$Configuration" {
+import {$FixedItemFluidTank$ItemTransformRule, $FixedItemFluidTank$ItemTransformRule$$Type} from "moe.wolfgirl.powerfuljs.custom.fluid_item.FixedItemFluidTank$ItemTransformRule"
+import {$RecordTypeInfo, $RecordTypeInfo$$Type} from "dev.latvian.mods.rhino.type.RecordTypeInfo"
+import {$FluidIngredient, $FluidIngredient$$Type} from "net.neoforged.neoforge.fluids.crafting.FluidIngredient"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $FixedItemFluidTank$Configuration extends $Record {
+static readonly "TYPE_INFO": $RecordTypeInfo
+
+constructor(capacity: integer, maxExtract: integer, maxReceive: integer, validator: $FluidIngredient$$Type, changeItemWhen: $FixedItemFluidTank$ItemTransformRule$$Type)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "capacity"(): integer
+public "changeItemWhen"(): $FixedItemFluidTank$ItemTransformRule
+public "maxReceive"(): integer
+public "maxExtract"(): integer
+public "validator"(): $FluidIngredient
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FixedItemFluidTank$Configuration$$Type = ({"changeItemWhen"?: $FixedItemFluidTank$ItemTransformRule$$Type, "maxExtract"?: integer, "capacity"?: integer, "validator"?: $FluidIngredient$$Type, "maxReceive"?: integer}) | ([changeItemWhen?: $FixedItemFluidTank$ItemTransformRule$$Type, maxExtract?: integer, capacity?: integer, validator?: $FluidIngredient$$Type, maxReceive?: integer]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FixedItemFluidTank$Configuration_ = $FixedItemFluidTank$Configuration$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.item.storage.FixedItemStorage$Configuration" {
+import {$Ingredient, $Ingredient$$Type} from "net.minecraft.world.item.crafting.Ingredient"
+import {$RecordTypeInfo, $RecordTypeInfo$$Type} from "dev.latvian.mods.rhino.type.RecordTypeInfo"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $FixedItemStorage$Configuration extends $Record {
+static readonly "TYPE_INFO": $RecordTypeInfo
+
+constructor(size: integer, maxStack: integer, validator: $Ingredient$$Type)
+
+public "size"(): integer
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "maxStack"(): integer
+public "validator"(): $Ingredient
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FixedItemStorage$Configuration$$Type = ({"validator"?: $Ingredient$$Type, "size"?: integer, "maxStack"?: integer}) | ([validator?: $Ingredient$$Type, size?: integer, maxStack?: integer]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FixedItemStorage$Configuration_ = $FixedItemStorage$Configuration$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.clazz.members.ConstructorInfo" {
+import {$TypeVariableHolder, $TypeVariableHolder$$Type} from "moe.wolfgirl.probejs.lang.java.base.TypeVariableHolder"
+import {$VariableType, $VariableType$$Type} from "moe.wolfgirl.probejs.lang.java.type.impl.VariableType"
+import {$List, $List$$Type} from "java.util.List"
+import {$Constructor, $Constructor$$Type} from "java.lang.reflect.Constructor"
+import {$ParamInfo, $ParamInfo$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.members.ParamInfo"
+
+export class $ConstructorInfo extends $TypeVariableHolder {
+readonly "params": $List<($ParamInfo)>
+readonly "variableTypes": $List<($VariableType)>
+
+constructor(arg0: $Constructor$$Type<(any)>)
+
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ConstructorInfo$$Type = ($ConstructorInfo);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ConstructorInfo_ = $ConstructorInfo$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.events.PowerfulRegisterCapabilitiesEvent" {
+import {$ConstantItem$Configuration, $ConstantItem$Configuration$$Type} from "moe.wolfgirl.powerfuljs.custom.item.ConstantItem$Configuration"
+import {$KubeEvent, $KubeEvent$$Type} from "dev.latvian.mods.kubejs.event.KubeEvent"
+import {$ConstantEnergy$Configuration, $ConstantEnergy$Configuration$$Type} from "moe.wolfgirl.powerfuljs.custom.forge_energy.ConstantEnergy$Configuration"
+import {$FixedHeatStorage$Configuration, $FixedHeatStorage$Configuration$$Type} from "moe.wolfgirl.powerfuljs.custom.mods.mekanism.heat.storage.FixedHeatStorage$Configuration"
+import {$Block, $Block$$Type} from "net.minecraft.world.level.block.Block"
+import {$ConstantChemical$Configuration, $ConstantChemical$Configuration$$Type} from "moe.wolfgirl.powerfuljs.custom.mods.mekanism.chemical.ConstantChemical$Configuration"
+import {$ConstantHeat$Configuration, $ConstantHeat$Configuration$$Type} from "moe.wolfgirl.powerfuljs.custom.mods.mekanism.heat.ConstantHeat$Configuration"
+import {$FixedChemicalStorage$Configuration, $FixedChemicalStorage$Configuration$$Type} from "moe.wolfgirl.powerfuljs.custom.mods.mekanism.chemical.storage.FixedChemicalStorage$Configuration"
+import {$FixedEnergyStorage$Configuration, $FixedEnergyStorage$Configuration$$Type} from "moe.wolfgirl.powerfuljs.custom.forge_energy.storage.FixedEnergyStorage$Configuration"
+import {$BlockInfo, $BlockInfo$$Type} from "moe.wolfgirl.powerfuljs.custom.registries.info.BlockInfo"
+import {$ItemStackInfo, $ItemStackInfo$$Type} from "moe.wolfgirl.powerfuljs.custom.registries.info.ItemStackInfo"
+import {$ConstantFluid$Configuration, $ConstantFluid$Configuration$$Type} from "moe.wolfgirl.powerfuljs.custom.fluid.ConstantFluid$Configuration"
+import {$ResourceLocation, $ResourceLocation$$Type} from "net.minecraft.resources.ResourceLocation"
+import {$FixedItemFluidTank$Configuration, $FixedItemFluidTank$Configuration$$Type} from "moe.wolfgirl.powerfuljs.custom.fluid_item.FixedItemFluidTank$Configuration"
+import {$FixedFluidTank$Configuration, $FixedFluidTank$Configuration$$Type} from "moe.wolfgirl.powerfuljs.custom.fluid.storage.FixedFluidTank$Configuration"
+import {$BlockEntityType, $BlockEntityType$$Type} from "net.minecraft.world.level.block.entity.BlockEntityType"
+import {$BlockEntityInfo, $BlockEntityInfo$$Type} from "moe.wolfgirl.powerfuljs.custom.registries.info.BlockEntityInfo"
+import {$Item, $Item$$Type} from "net.minecraft.world.item.Item"
+import {$FixedItemStorage$Configuration, $FixedItemStorage$Configuration$$Type} from "moe.wolfgirl.powerfuljs.custom.item.storage.FixedItemStorage$Configuration"
+import {$EntityType, $EntityType$$Type} from "net.minecraft.world.entity.EntityType"
+import {$EntityInfo, $EntityInfo$$Type} from "moe.wolfgirl.powerfuljs.custom.registries.info.EntityInfo"
+
+export class $PowerfulRegisterCapabilitiesEvent implements $KubeEvent {
+
+constructor()
+
+public "registerEntity"<T extends EntityCapabilities>(builderKey: T, configuration: EntityCapabilityMap[T], ...entityTypes: ($EntityType$$Type<(any)>)[]): $EntityInfo
+public "registerBlock"<T extends BlockCapabilities>(builderKey: T, configuration: BlockCapabilityMap[T], ...blocks: ($Block$$Type)[]): $BlockInfo
+public "registerBlockEntity"<T extends BlockEntityCapabilities>(builderKey: T, configuration: BlockEntityCapabilityMap[T], blockEntityType: $BlockEntityType$$Type<(any)>): $BlockEntityInfo
+public "registerItem"<T extends ItemCapabilities>(builderKey: T, configuration: ItemCapabilityMap[T], ...items: ($Item$$Type)[]): $ItemStackInfo
+/**
+ * Stops the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `exit` denotes a `default` outcome.
+ */
+public "exit"(arg1: any): any
+/**
+ * Stops the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `exit` denotes a `default` outcome.
+ */
+public "exit"(): any
+/**
+ * Cancels the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `cancel` denotes a `false` outcome.
+ */
+public "cancel"(arg1: any): any
+/**
+ * Cancels the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `cancel` denotes a `false` outcome.
+ */
+public "cancel"(): any
+/**
+ * Stops the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `success` denotes a `true` outcome.
+ */
+public "success"(arg1: any): any
+/**
+ * Stops the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `success` denotes a `true` outcome.
+ */
+public "success"(): any
+}
+export type BlockEntityCapabilityMap = {"powerfuljs:constant_heat": $ConstantHeat$Configuration$$Type;
+"powerfuljs:fixed_storage_heat": $FixedHeatStorage$Configuration$$Type;
+"powerfuljs:constant_item": $ConstantItem$Configuration$$Type;
+"powerfuljs:fixed_storage_chemical": $FixedChemicalStorage$Configuration$$Type;
+"powerfuljs:fixed_storage_fluid": $FixedFluidTank$Configuration$$Type;
+"powerfuljs:constant_chemical": $ConstantChemical$Configuration$$Type;
+"powerfuljs:fixed_storage_fe": $FixedEnergyStorage$Configuration$$Type;
+"powerfuljs:fixed_storage_item": $FixedItemStorage$Configuration$$Type;
+"powerfuljs:constant_energy": $ConstantEnergy$Configuration$$Type;
+"powerfuljs:constant_fluid": $ConstantFluid$Configuration$$Type};
+export type BlockEntityCapabilities = keyof BlockEntityCapabilityMap;
+export type BlockCapabilityMap = {"powerfuljs:constant_heat": $ConstantHeat$Configuration$$Type;
+"powerfuljs:constant_item": $ConstantItem$Configuration$$Type;
+"powerfuljs:constant_chemical": $ConstantChemical$Configuration$$Type;
+"powerfuljs:constant_energy": $ConstantEnergy$Configuration$$Type;
+"powerfuljs:constant_fluid": $ConstantFluid$Configuration$$Type};
+export type BlockCapabilities = keyof BlockCapabilityMap;
+export type EntityCapabilityMap = {"powerfuljs:constant_item": $ConstantItem$Configuration$$Type;
+"powerfuljs:fixed_storage_chemical": $FixedChemicalStorage$Configuration$$Type;
+"powerfuljs:fixed_storage_fluid": $FixedFluidTank$Configuration$$Type;
+"powerfuljs:fixed_storage_item_automation": $FixedItemStorage$Configuration$$Type;
+"powerfuljs:constant_item_automation": $ConstantItem$Configuration$$Type;
+"powerfuljs:constant_chemical": $ConstantChemical$Configuration$$Type;
+"powerfuljs:fixed_storage_fe": $FixedEnergyStorage$Configuration$$Type;
+"powerfuljs:fixed_storage_item": $FixedItemStorage$Configuration$$Type;
+"powerfuljs:constant_energy": $ConstantEnergy$Configuration$$Type;
+"powerfuljs:constant_fluid": $ConstantFluid$Configuration$$Type};
+export type EntityCapabilities = keyof EntityCapabilityMap;
+export type ItemCapabilityMap = {"powerfuljs:constant_item": $ConstantItem$Configuration$$Type;
+"powerfuljs:fixed_storage_chemical": $FixedChemicalStorage$Configuration$$Type;
+"powerfuljs:fixed_storage_fluid": $FixedItemFluidTank$Configuration$$Type;
+"powerfuljs:constant_chemical": $ConstantChemical$Configuration$$Type;
+"powerfuljs:fixed_storage_fe": $FixedEnergyStorage$Configuration$$Type;
+"powerfuljs:fixed_storage_item": $FixedItemStorage$Configuration$$Type;
+"powerfuljs:constant_energy": $ConstantEnergy$Configuration$$Type;
+"powerfuljs:constant_fluid": $ConstantFluid$Configuration$$Type};
+export type ItemCapabilities = keyof ItemCapabilityMap;
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $PowerfulRegisterCapabilitiesEvent$$Type = ($PowerfulRegisterCapabilitiesEvent);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $PowerfulRegisterCapabilitiesEvent_ = $PowerfulRegisterCapabilitiesEvent$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.registries.LogicRegistry$Effects" {
+import {$ItemStack, $ItemStack$$Type} from "net.minecraft.world.item.ItemStack"
+import {$Effect, $Effect$$Type} from "moe.wolfgirl.powerfuljs.custom.logic.Effect"
+import {$Direction, $Direction$$Type} from "net.minecraft.core.Direction"
+import {$EffectJS$Apply, $EffectJS$Apply$$Type} from "moe.wolfgirl.powerfuljs.custom.logic.effects.EffectJS$Apply"
+import {$FluidStack, $FluidStack$$Type} from "net.neoforged.neoforge.fluids.FluidStack"
+
+export class $LogicRegistry$Effects {
+
+constructor()
+
+/**
+ * Note that Rhino might be 10 or 100x slower than Java, so you shall not call this often for performance reason.
+ */
+public static "custom"(callback: $EffectJS$Apply$$Type): $Effect
+public static "addFurnaceProgress"(progressTicks: integer): $Effect
+/**
+ * Changes the tick speed to Nx of the original, e.g. 0.1 will make it 90% slower, and 2 will make it 2x faster.
+ */
+public static "changeTickSpeed"(tickSpeed: float): $Effect
+public static "toggleEnable"(): $Effect
+public static "addFurnaceFuel"(fuelTicks: integer): $Effect
+public static "extractItem"(itemStack: $ItemStack$$Type, context: $Direction$$Type): $Effect
+public static "insertItem"(itemStack: $ItemStack$$Type, context: $Direction$$Type): $Effect
+public static "drainEnergy"(energy: integer, forced: boolean, direction: $Direction$$Type): $Effect
+public static "drainEnergy"(energy: integer, direction: $Direction$$Type): $Effect
+public static "fillFluid"(fluidStack: $FluidStack$$Type, direction: $Direction$$Type): $Effect
+public static "fillFluid"(fluidStack: $FluidStack$$Type, forced: boolean, direction: $Direction$$Type): $Effect
+public static "drainFluid"(fluidStack: $FluidStack$$Type, direction: $Direction$$Type): $Effect
+public static "drainFluid"(fluidStack: $FluidStack$$Type, forced: boolean, direction: $Direction$$Type): $Effect
+public static "fillEnergy"(energy: integer, forced: boolean, direction: $Direction$$Type): $Effect
+public static "fillEnergy"(energy: integer, direction: $Direction$$Type): $Effect
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $LogicRegistry$Effects$$Type = ($LogicRegistry$Effects);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $LogicRegistry$Effects_ = $LogicRegistry$Effects$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.fluid_item.FixedItemFluidTank$ItemTransformRule$FullRule" {
+import {$ItemStack, $ItemStack$$Type} from "net.minecraft.world.item.ItemStack"
+import {$FluidIngredient, $FluidIngredient$$Type} from "net.neoforged.neoforge.fluids.crafting.FluidIngredient"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $FixedItemFluidTank$ItemTransformRule$FullRule extends $Record {
+
+constructor(fluid: $FluidIngredient$$Type, item: $ItemStack$$Type)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "item"(): $ItemStack
+public "fluid"(): $FluidIngredient
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FixedItemFluidTank$ItemTransformRule$FullRule$$Type = ({"item"?: $ItemStack$$Type, "fluid"?: $FluidIngredient$$Type}) | ([item?: $ItemStack$$Type, fluid?: $FluidIngredient$$Type]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FixedItemFluidTank$ItemTransformRule$FullRule_ = $FixedItemFluidTank$ItemTransformRule$FullRule$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo$Type" {
+import {$Enum, $Enum$$Type} from "java.lang.Enum"
+
+export class $ImportInfo$Type extends $Enum<($ImportInfo$Type)> {
+static readonly "ORIGINAL": $ImportInfo$Type
+static readonly "TYPE": $ImportInfo$Type
+static readonly "STATIC": $ImportInfo$Type
+
+
+public static "values"(): ($ImportInfo$Type)[]
+public static "valueOf"(name: string): $ImportInfo$Type
+public "applyTemplate"(name: string): string
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ImportInfo$Type$$Type = (("original") | ("type") | ("static"));
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ImportInfo$Type_ = $ImportInfo$Type$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.events.PowerfulInterceptTickingEvent" {
+import {$KubeEvent, $KubeEvent$$Type} from "dev.latvian.mods.kubejs.event.KubeEvent"
+import {$BlockEntityType, $BlockEntityType$$Type} from "net.minecraft.world.level.block.entity.BlockEntityType"
+import {$Supplier, $Supplier$$Type} from "java.util.function.Supplier"
+import {$List, $List$$Type} from "java.util.List"
+import {$Rule, $Rule$$Type} from "moe.wolfgirl.powerfuljs.custom.logic.Rule"
+
+export class $PowerfulInterceptTickingEvent implements $KubeEvent {
+
+constructor()
+
+/**
+ * Force a block entity to be ticked or not, returning false will disable its original ticking logic.
+ */
+public "forceTicker"(blockEntityType: $BlockEntityType$$Type<(any)>, ticked: boolean): void
+/**
+ * Intercept the ticking logic of a block entity. The supplier is important to ensure one ruleset is created for every instance of block entities.
+ */
+public "intercept"(blockEntityType: $BlockEntityType$$Type<(any)>, rules: $Supplier$$Type<($List$$Type<($Rule$$Type)>)>): void
+/**
+ * Stops the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `exit` denotes a `default` outcome.
+ */
+public "exit"(arg1: any): any
+/**
+ * Stops the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `exit` denotes a `default` outcome.
+ */
+public "exit"(): any
+/**
+ * Cancels the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `cancel` denotes a `false` outcome.
+ */
+public "cancel"(arg1: any): any
+/**
+ * Cancels the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `cancel` denotes a `false` outcome.
+ */
+public "cancel"(): any
+/**
+ * Stops the event with the given exit value. Execution will be stopped **immediately**.
+ * 
+ * `success` denotes a `true` outcome.
+ */
+public "success"(arg1: any): any
+/**
+ * Stops the event with default exit value. Execution will be stopped **immediately**.
+ * 
+ * `success` denotes a `true` outcome.
+ */
+public "success"(): any
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $PowerfulInterceptTickingEvent$$Type = ($PowerfulInterceptTickingEvent);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $PowerfulInterceptTickingEvent_ = $PowerfulInterceptTickingEvent$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType" {
+import {$Code, $Code$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.Code"
+import {$TSArrayType, $TSArrayType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.TSArrayType"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $BaseType extends $Code {
+
+constructor()
+
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+public "format"(declaration: $Declaration$$Type): $List<(string)>
+public "line"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): string
+public "asArray"(): $TSArrayType
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $BaseType$$Type = ($BaseType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $BaseType_ = $BaseType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.snippet.parts.SnippetPart" {
+export {} // Mark the file as a module, do not remove unless there are other import/exports!
+export interface $SnippetPart {
+
+ "format"(): string
+
+(): string
+}
+
+export namespace $SnippetPart {
+const probejs$$marker: never
+}
+export class $SnippetPart$$Static implements $SnippetPart {
+
+
+ "format"(): string
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $SnippetPart$$Type = (() => string);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $SnippetPart_ = $SnippetPart$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo" {
+import {$UnaryOperator, $UnaryOperator$$Type} from "java.util.function.UnaryOperator"
+import {$ImportInfo$Type, $ImportInfo$Type$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo$Type"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $ImportInfo extends $Record {
+static readonly "ORIGINAL": $UnaryOperator<(string)>
+static readonly "INPUT_TEMPLATE": string
+static readonly "STATIC_TEMPLATE": string
+
+constructor(classPath: $ClassPath$$Type, type: $ImportInfo$Type$$Type)
+
+public static "type"(path: $ClassPath$$Type): $ImportInfo
+public "type"(): $ImportInfo$Type
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public static "original"(path: $ClassPath$$Type): $ImportInfo
+public "asType"(type: $ImportInfo$Type$$Type): $ImportInfo
+public "classPath"(): $ClassPath
+public static "importStatic"(path: $ClassPath$$Type): $ImportInfo
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ImportInfo$$Type = ({"classPath"?: $ClassPath$$Type, "type"?: $ImportInfo$Type$$Type}) | ([classPath?: $ClassPath$$Type, type?: $ImportInfo$Type$$Type]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ImportInfo_ = $ImportInfo$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.forge_energy.storage.FixedEnergyStorage$Configuration" {
+import {$RecordTypeInfo, $RecordTypeInfo$$Type} from "dev.latvian.mods.rhino.type.RecordTypeInfo"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $FixedEnergyStorage$Configuration extends $Record {
+static readonly "TYPE_INFO": $RecordTypeInfo
+
+constructor(capacity: integer, maxExtract: integer, maxReceive: integer)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "capacity"(): integer
+public "maxReceive"(): integer
+public "maxExtract"(): integer
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $FixedEnergyStorage$Configuration$$Type = ({"maxExtract"?: integer, "capacity"?: integer, "maxReceive"?: integer}) | ([maxExtract?: integer, capacity?: integer, maxReceive?: integer]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $FixedEnergyStorage$Configuration_ = $FixedEnergyStorage$Configuration$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.base.CapabilityBuilder$CapabilityFactory" {
+export {} // Mark the file as a module, do not remove unless there are other import/exports!
+export interface $CapabilityBuilder$CapabilityFactory<O, T> {
+
+ "getCapability"(object: O): T
+
+(object: O): T
+}
+
+export namespace $CapabilityBuilder$CapabilityFactory {
+const probejs$$marker: never
+}
+export class $CapabilityBuilder$CapabilityFactory$$Static<O, T> implements $CapabilityBuilder$CapabilityFactory {
+
+
+ "getCapability"(object: O): T
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $CapabilityBuilder$CapabilityFactory$$Type<O, T> = ((object: O) => T);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $CapabilityBuilder$CapabilityFactory_<O, T> = $CapabilityBuilder$CapabilityFactory$$Type<(O), (T)>;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.clazz.Clazz$ClassAttribute" {
+import {$Clazz$ClassType, $Clazz$ClassType$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.Clazz$ClassType"
+import {$Class, $Class$$Type} from "java.lang.Class"
+
+export class $Clazz$ClassAttribute {
+readonly "type": $Clazz$ClassType
+readonly "isAbstract": boolean
+readonly "isInterface": boolean
+readonly "raw": $Class<(any)>
+
+constructor(clazz: $Class$$Type<(any)>)
+
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Clazz$ClassAttribute$$Type = ($Clazz$ClassAttribute);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Clazz$ClassAttribute_ = $Clazz$ClassAttribute$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSPrimitiveType" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $JSPrimitiveType extends $BaseType {
+readonly "content": string
+
+constructor(content: string)
+
+public "equals"(o: any): boolean
+public "hashCode"(): integer
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSPrimitiveType$$Type = ($JSPrimitiveType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSPrimitiveType_ = $JSPrimitiveType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.TSArrayType" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $TSArrayType extends $BaseType {
+ "component": $BaseType
+
+constructor(component: $BaseType$$Type)
+
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $TSArrayType$$Type = ($TSArrayType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $TSArrayType_ = $TSArrayType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.Item" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$ShearsItemBuilder, $ShearsItemBuilder$$Type} from "dev.latvian.mods.kubejs.item.custom.ShearsItemBuilder"
+import {$InfinityCellBuilder, $InfinityCellBuilder$$Type} from "com.glodblock.github.extendedae.xmod.kjs.InfinityCellBuilder"
+import {$DiggerItemBuilder$Axe, $DiggerItemBuilder$Axe$$Type} from "dev.latvian.mods.kubejs.item.custom.DiggerItemBuilder$Axe"
+import {$DiggerItemBuilder$Shovel, $DiggerItemBuilder$Shovel$$Type} from "dev.latvian.mods.kubejs.item.custom.DiggerItemBuilder$Shovel"
+import {$RitualDummyItemType, $RitualDummyItemType$$Type} from "com.klikli_dev.occultism_kubejs.RitualDummyItemType"
+import {$ArmorItemBuilder$Boots, $ArmorItemBuilder$Boots$$Type} from "dev.latvian.mods.kubejs.item.custom.ArmorItemBuilder$Boots"
+import {$SmithingTemplateItemBuilder, $SmithingTemplateItemBuilder$$Type} from "dev.latvian.mods.kubejs.item.custom.SmithingTemplateItemBuilder"
+import {$ArmorItemBuilder$Helmet, $ArmorItemBuilder$Helmet$$Type} from "dev.latvian.mods.kubejs.item.custom.ArmorItemBuilder$Helmet"
+import {$ArmorItemBuilder$AnimalArmor, $ArmorItemBuilder$AnimalArmor$$Type} from "dev.latvian.mods.kubejs.item.custom.ArmorItemBuilder$AnimalArmor"
+import {$ArmorItemBuilder$Chestplate, $ArmorItemBuilder$Chestplate$$Type} from "dev.latvian.mods.kubejs.item.custom.ArmorItemBuilder$Chestplate"
+import {$SwordItemBuilder, $SwordItemBuilder$$Type} from "dev.latvian.mods.kubejs.item.custom.SwordItemBuilder"
+import {$DiggerItemBuilder$Hoe, $DiggerItemBuilder$Hoe$$Type} from "dev.latvian.mods.kubejs.item.custom.DiggerItemBuilder$Hoe"
+import {$DiggerItemBuilder$Pickaxe, $DiggerItemBuilder$Pickaxe$$Type} from "dev.latvian.mods.kubejs.item.custom.DiggerItemBuilder$Pickaxe"
+import {$Item as $Item$0, $Item$$Type as $Item$0$$Type} from "net.minecraft.world.item.Item"
+import {$ItemBuilder, $ItemBuilder$$Type} from "dev.latvian.mods.kubejs.item.ItemBuilder"
+import {$ArmorItemBuilder$Leggings, $ArmorItemBuilder$Leggings$$Type} from "dev.latvian.mods.kubejs.item.custom.ArmorItemBuilder$Leggings"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $Item extends $RegistryKubeEvent<($Item$0)> {
+
+
+public "create"(name: string): $ItemBuilder
+public "create"(name: string, type: "sword"): $SwordItemBuilder
+public "create"(name: string, type: "pickaxe"): $DiggerItemBuilder$Pickaxe
+public "create"(name: string, type: "axe"): $DiggerItemBuilder$Axe
+public "create"(name: string, type: "shovel"): $DiggerItemBuilder$Shovel
+public "create"(name: string, type: "hoe"): $DiggerItemBuilder$Hoe
+public "create"(name: string, type: "shears"): $ShearsItemBuilder
+public "create"(name: string, type: "helmet"): $ArmorItemBuilder$Helmet
+public "create"(name: string, type: "chestplate"): $ArmorItemBuilder$Chestplate
+public "create"(name: string, type: "leggings"): $ArmorItemBuilder$Leggings
+public "create"(name: string, type: "boots"): $ArmorItemBuilder$Boots
+public "create"(name: string, type: "animal_armor"): $ArmorItemBuilder$AnimalArmor
+public "create"(name: string, type: "smithing_template"): $SmithingTemplateItemBuilder
+public "create"(name: string, type: "custom_infinity_cell"): $InfinityCellBuilder
+public "create"(name: string, type: "occultism:ritual_dummy"): $RitualDummyItemType
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Item$$Type = ($Item);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Item_ = $Item$$Type;
+}}
+declare module "moe.wolfgirl.probejs.plugin.Probe" {
+import {$Player, $Player$$Type} from "net.minecraft.world.entity.player.Player"
+import {$BlockContainerJS, $BlockContainerJS$$Type} from "dev.latvian.mods.kubejs.level.BlockContainerJS"
+import {$Entity, $Entity$$Type} from "net.minecraft.world.entity.Entity"
+
+/**
+ * Debugging utility for easier check on players, blocks, items, etc.
+ */
+export class $Probe {
+static readonly "INSTANCE": $Probe
+
+constructor()
+
+public "getCurrentPlayer"(): $Player
+public "getLastRightClickedEntity"(): $Entity
+public "getLastRightClickedBlock"(): $BlockContainerJS
+get "currentPlayer"(): $Player
+get "lastRightClickedEntity"(): $Entity
+get "lastRightClickedBlock"(): $BlockContainerJS
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Probe$$Type = ($Probe);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Probe_ = $Probe$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.TSParamType" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+import {$List, $List$$Type} from "java.util.List"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+import {$BaseType$FormatType, $BaseType$FormatType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType$FormatType"
+
+export class $TSParamType extends $BaseType {
+ "baseType": $BaseType
+ "params": $List<($BaseType)>
+
+constructor(baseType: $BaseType$$Type, params: $List$$Type<($BaseType$$Type)>)
+
+public "format"(declaration: $Declaration$$Type, input: $BaseType$FormatType$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $TSParamType$$Type = ($TSParamType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $TSParamType_ = $TSParamType$$Type;
+}}
+declare module "moe.wolfgirl.powerfuljs.custom.fluid.ConstantFluid$Configuration" {
+import {$RecordTypeInfo, $RecordTypeInfo$$Type} from "dev.latvian.mods.rhino.type.RecordTypeInfo"
+import {$FluidStack, $FluidStack$$Type} from "net.neoforged.neoforge.fluids.FluidStack"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $ConstantFluid$Configuration extends $Record {
+static readonly "TYPE_INFO": $RecordTypeInfo
+
+constructor(content: $FluidStack$$Type, maxReceive: integer)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "content"(): $FluidStack
+public "maxReceive"(): integer
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ConstantFluid$Configuration$$Type = ({"maxReceive"?: integer, "content"?: $FluidStack$$Type}) | ([maxReceive?: integer, content?: $FluidStack$$Type]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ConstantFluid$Configuration_ = $ConstantFluid$Configuration$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.java.clazz.members.ParamInfo" {
+import {$AnnotationHolder, $AnnotationHolder$$Type} from "moe.wolfgirl.probejs.lang.java.base.AnnotationHolder"
+import {$TypeDescriptor, $TypeDescriptor$$Type} from "moe.wolfgirl.probejs.lang.java.type.TypeDescriptor"
+import {$Parameter, $Parameter$$Type} from "java.lang.reflect.Parameter"
+
+export class $ParamInfo extends $AnnotationHolder {
+ "name": string
+ "type": $TypeDescriptor
+readonly "varArgs": boolean
+
+constructor(parameter: $Parameter$$Type)
+
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ParamInfo$$Type = ($ParamInfo);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ParamInfo_ = $ParamInfo$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.Reference" {
+import {$ImportInfo$Type, $ImportInfo$Type$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo$Type"
+import {$ClassPath, $ClassPath$$Type} from "moe.wolfgirl.probejs.lang.java.clazz.ClassPath"
+import {$EnumSet, $EnumSet$$Type} from "java.util.EnumSet"
+import {$Record, $Record$$Type} from "java.lang.Record"
+
+export class $Reference extends $Record {
+
+constructor(classPath: $ClassPath$$Type, symbol: string, types: $EnumSet$$Type<($ImportInfo$Type$$Type)>)
+
+public "equals"(o: any): boolean
+public "toString"(): string
+public "hashCode"(): integer
+public "types"(): $EnumSet<($ImportInfo$Type)>
+public "classPath"(): $ClassPath
+public "symbol"(): string
+public "getImport"(): string
+get "import"(): string
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Reference$$Type = ({"symbol"?: string, "classPath"?: $ClassPath$$Type, "types"?: $EnumSet$$Type<($ImportInfo$Type$$Type)>}) | ([symbol?: string, classPath?: $ClassPath$$Type, types?: $EnumSet$$Type<($ImportInfo$Type$$Type)>]);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Reference_ = $Reference$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.minecraft.ParticleType" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$ParticleTypeBuilder, $ParticleTypeBuilder$$Type} from "dev.latvian.mods.kubejs.misc.ParticleTypeBuilder"
+import {$ParticleType as $ParticleType$0, $ParticleType$$Type as $ParticleType$0$$Type} from "net.minecraft.core.particles.ParticleType"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $ParticleType extends $RegistryKubeEvent<($ParticleType$0)> {
+
+
+public "create"(name: string): $ParticleTypeBuilder
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $ParticleType$$Type = ($ParticleType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $ParticleType_ = $ParticleType$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.ts.Wrapped" {
+import {$CommentableCode, $CommentableCode$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.member.CommentableCode"
+import {$Code, $Code$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.Code"
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$List, $List$$Type} from "java.util.List"
+import {$Declaration, $Declaration$$Type} from "moe.wolfgirl.probejs.lang.typescript.Declaration"
+
+export class $Wrapped extends $CommentableCode {
+readonly "codes": $List<($Code)>
+readonly "comments": $List<(string)>
+
+constructor()
+
+public "isEmpty"(): boolean
+public "merge"(other: $Wrapped$$Type): void
+public "addCode"(inner: $Code$$Type): void
+public "formatRaw"(declaration: $Declaration$$Type): $List<(string)>
+public "getUsedImports"(): $Collection<($ImportInfo)>
+get "empty"(): boolean
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Wrapped$$Type = ($Wrapped);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Wrapped_ = $Wrapped$$Type;
+}}
+declare module "moe.wolfgirl.probejs.generated.registry.mekanism.Chemical" {
+import {$RegistryKubeEvent, $RegistryKubeEvent$$Type} from "dev.latvian.mods.kubejs.registry.RegistryKubeEvent"
+import {$KubeChemicalBuilder$DirtySlurry, $KubeChemicalBuilder$DirtySlurry$$Type} from "dev.latvian.mods.kubejs.mekanism.KubeChemicalBuilder$DirtySlurry"
+import {$KubeChemicalBuilder$InfuseType, $KubeChemicalBuilder$InfuseType$$Type} from "dev.latvian.mods.kubejs.mekanism.KubeChemicalBuilder$InfuseType"
+import {$KubeChemicalBuilder$CleanSlurry, $KubeChemicalBuilder$CleanSlurry$$Type} from "dev.latvian.mods.kubejs.mekanism.KubeChemicalBuilder$CleanSlurry"
+import {$Chemical as $Chemical$0, $Chemical$$Type as $Chemical$0$$Type} from "mekanism.api.chemical.Chemical"
+import {$KubeChemicalBuilder$Default, $KubeChemicalBuilder$Default$$Type} from "dev.latvian.mods.kubejs.mekanism.KubeChemicalBuilder$Default"
+import {$KubeChemicalBuilder$Liquid, $KubeChemicalBuilder$Liquid$$Type} from "dev.latvian.mods.kubejs.mekanism.KubeChemicalBuilder$Liquid"
+import {$KubeChemicalBuilder$Pigment, $KubeChemicalBuilder$Pigment$$Type} from "dev.latvian.mods.kubejs.mekanism.KubeChemicalBuilder$Pigment"
+
+/**
+ * This is a class generated by ProbeJS, you shall not load/require this class for your usages
+ * because it doesn't exist in the JVM. The class exist only for type hinting purpose.
+ * Loading the class will not throw an error, but instead the class loaded will be undefined.
+ */
+export class $Chemical extends $RegistryKubeEvent<($Chemical$0)> {
+
+
+public "create"(name: string): $KubeChemicalBuilder$Default
+public "create"(name: string, type: "liquid"): $KubeChemicalBuilder$Liquid
+public "create"(name: string, type: "clean_slurry"): $KubeChemicalBuilder$CleanSlurry
+public "create"(name: string, type: "dirty_slurry"): $KubeChemicalBuilder$DirtySlurry
+public "create"(name: string, type: "infuse_type"): $KubeChemicalBuilder$InfuseType
+public "create"(name: string, type: "pigment"): $KubeChemicalBuilder$Pigment
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $Chemical$$Type = ($Chemical);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $Chemical_ = $Chemical$$Type;
+}}
+declare module "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSMemberType" {
+import {$Collection, $Collection$$Type} from "java.util.Collection"
+import {$ImportInfo, $ImportInfo$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.ImportInfo"
+import {$JSParam, $JSParam$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.js.JSParam"
+import {$BaseType, $BaseType$$Type} from "moe.wolfgirl.probejs.lang.typescript.code.type.BaseType"
+
+export class $JSMemberType extends $BaseType {
+readonly "members": $Collection<($JSParam)>
+
+
+public "getUsedImports"(): $Collection<($ImportInfo)>
+get "usedImports"(): $Collection<($ImportInfo)>
+}
+/**
+ * Class-specific type exported by ProbeJS, use global Type_
+ * types for convenience unless there's a naming conflict.
+ */
+export type $JSMemberType$$Type = ($JSMemberType);
+/**
+ * Global type exported for convenience, use class-specific
+ * types if there's a naming conflict.
+ */
+declare global {
+export type $JSMemberType_ = $JSMemberType$$Type;
+}}
